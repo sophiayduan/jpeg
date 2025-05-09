@@ -1,20 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--
+to run project and continuously port input.css to output.css
+
+run in terminal:
+
+1. npm install tailwindcss @tailwindcss/cli
+2. TRY: npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch
+
+if it says "tailwindcss: permission denied", run:
+npm rebuild
+
+run step 2 command again
+
+-->
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link href="src/output.css" rel="stylesheet"> -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="src/output.css" rel="stylesheet">
+    <!--<script src="https://cdn.tailwindcss.com"></script>-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+US+Trad:wght@100..400&display=swap" rel="stylesheet">
     <title>JPEG</title>
 </head>
 <body>
-    <nav class="z-10 bg-sky-600 px-10 h-16 pt-3 fixed w-screen  items-center">
+    <nav class="z-10 bg-blue px-10 h-16 pt-3 fixed w-screen  items-center">
         <div class="flex w-full items-center gap-8">
-            <div class=" h-10 w-10 bg-orange-200"></div>
+            <div class=" h-10 w-10 bg-yellow"></div>
             <div>
                 <p class=""style= "font-family: Playwrite US Trad">ottawa</p>
             </div>
@@ -40,13 +54,13 @@
             <div class="relative w-auto h-auto">
                 <button type="button"   
                 class=" transition-all duration-500 ease-in-out rounded-lg hover:underline 
-                 text-xl hover:scale-110 text-white bg-sky-600 h-16 w-60 font-bold shadow-2xl shadow-grey-100 ">
+                 text-xl hover:scale-110 text-white bg-blue h-16 w-60 font-bold shadow-2xl shadow-grey-100 ">
                  <p class="font-sans text-stone-200">SIGN UP NOW!</p></button>
             </div>
         </div>
     </section>
     <section>
-        <div class="relative h-80 w-screen bg-sky-600">
+        <div class="relative h-80 w-screen bg-blue">
             <div class=" flex items-center relative mx-10  -top-10 absolute rounded-2xl w-[80%] h-full bg-white">
                 <div class=" mx-10 h-[75%] w-[50%] bg-blue-300 rounded-2xl"></div>
                 <p class="mx-6 leading-[1.5] text-2xl w-[50%]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque 
@@ -54,23 +68,23 @@
                     porttitor odio odio, vitae maximus turpis tincidunt tincidunt. </p>
             </div>
         </div>
-        <!-- <div class="relative w-60 h-80 bg-sky-600"></div> -->
+        <!-- <div class="relative w-60 h-80 bg-blue"></div> -->
     </section>
 
-    <section id = "about" class="pt-10 bg-orange-200">
+    <section id = "about" class="pt-10 bg-yellow">
         <h2 class="text-center text-5xl text-sky-600 font-bold">BUILD WHAT YOU LOVE</h2>
         <div class="h-80 flex  justify-center items-center">
             <div class ="flex gap-10 w-screen justify-center">
                 <div class="flex flex-col w-[26%] ">
-                    <div class = "rounded-xl h-60 bg-sky-600 hover:bg-blue-600"></div>
+                    <div class = "rounded-xl h-60 bg-blue hover:bg-blue-600"></div>
                     <p class="text-center text-2xl">SIGN UP</p>
                 </div>
                 <div class="flex flex-col w-[26%]">
-                    <div class = "rounded-xl h-60 bg-sky-600"></div>
+                    <div class = "rounded-xl h-60 bg-blue"></div>
                     <p class="text-center text-2xl">SIGN UP</p>
                 </div>
                 <div class="flex flex-col w-[26%]">
-                    <div class = "rounded-xl h-60 bg-sky-600"></div>
+                    <div class = "rounded-xl h-60 bg-blue"></div>
                     <p class="text-center text-2xl">SIGN UP</p>
                 </div>
 
@@ -99,14 +113,20 @@
             </div>
         </div>
     </section>
+    <section>
+        <div class="bg-[var(--blue)]">
+
+            
+        </div>
+    </section>
     <footer>
-        <div class="bg-orange-200 h-40">  
+        <div class="bg-yellow h-40">  
             <div class="flex justify-center items-center pt-6 gap-6">
-                <div class="size-16 rounded-full bg-sky-600"></div>
-                <div class="size-16 rounded-full bg-sky-600"></div>
-                <div class="size-16 rounded-full bg-sky-600"></div>
-                <div class="size-16 rounded-full bg-sky-600"></div>
-                <div class="size-16 rounded-full bg-sky-600"></div>
+                <div class="size-16 rounded-full bg-blue"></div>
+                <div class="size-16 rounded-full bg-blue"></div>
+                <div class="size-16 rounded-full bg-blue"></div>
+                <div class="size-16 rounded-full bg-blue"></div>
+                <div class="size-16 rounded-full bg-blue"></div>
             </div>
             <div class="flex pt-2 w-full">
                 <div class="flex w-full justify-center items-center">
