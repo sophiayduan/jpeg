@@ -6,12 +6,18 @@ to run project and continuously port input.css to output.css
 run in terminal:
 
 1. npm install tailwindcss @tailwindcss/cli
-2. TRY: npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch
+2. (this is actually what ports the normal css, like variables, and html classes
+    from input.css and index.html to tailwindcss in output.css. the --watch makes it so
+    everytime you make a change to a file, it will rerun itself)
+    TRY: npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch 
 
 if it says "tailwindcss: permission denied", run:
 npm rebuild
 
 run step 2 command again
+
+USEFUL UTILITIES:
+object-scale-down -> keeps original scale of image and just scales down based on viewport
 
 -->
 
@@ -47,22 +53,22 @@ run step 2 command again
     <div class="-mx-2 absolute mt-16 hover:rotate-3 transition-all">
         <img src="https://assets.hackclub.com/flag-orpheus-left.svg" target="blank">
     </div>
-    <section class="h-screen flex justify-center items-center bg-stone-200">
+    <section class="h-screen flex justify-center items-center bg-white">
         <div class="flex flex-col gap-2 items-center">
-            <img src="jpeg.png" target="blank" loading="lazy" class="w-200 h-80">
-            <h3 class="text-sky-600 py-1 text-2xl text-center" style=  "font-family: Playwrite US Trad">25h to build a game</h3>
+            <img src="./images/jpeg.png" target="blank" loading="lazy" class="w-160 h-90 object-scale-down">
+            <h3 class="text-blue py-1 text-2xl text-center" style=  "font-family: Playwrite US Trad">25h to build a game</h3>
             <div class="relative w-auto h-auto">
                 <button type="button"   
                 class=" transition-all duration-500 ease-in-out rounded-lg hover:underline 
-                 text-xl hover:scale-110 text-white bg-blue h-16 w-60 font-bold shadow-2xl shadow-grey-100 ">
-                 <p class="font-sans text-stone-200">SIGN UP NOW!</p></button>
+                 text-xl hover:scale-110 text-white bg-teal h-16 w-60 font-bold shadow-2xl shadow-grey-100 ">
+                 <p class="font-sans text-white">SIGN UP NOW!</p></button>
             </div>
         </div>
     </section>
     <section>
         <div class="relative h-80 w-screen bg-blue">
             <div class=" flex items-center relative mx-10  -top-10 absolute rounded-2xl w-[80%] h-full bg-white">
-                <div class=" mx-10 h-[75%] w-[50%] bg-blue-300 rounded-2xl"></div>
+                <div class=" mx-10 h-[75%] w-[50%] bg-blue rounded-2xl"></div>
                 <p class="mx-6 leading-[1.5] text-2xl w-[50%]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque 
                     vel risus lobortis elit iaculis aliquet quis eu magna. Mauris 
                     porttitor odio odio, vitae maximus turpis tincidunt tincidunt. </p>
@@ -72,7 +78,7 @@ run step 2 command again
     </section>
 
     <section id = "about" class="pt-10 bg-yellow">
-        <h2 class="text-center text-5xl text-sky-600 font-bold">BUILD WHAT YOU LOVE</h2>
+        <h2 class="text-center text-5xl text-blue font-bold">BUILD WHAT YOU LOVE</h2>
         <div class="h-80 flex  justify-center items-center">
             <div class ="flex gap-10 w-screen justify-center">
                 <div class="flex flex-col w-[26%] ">
@@ -113,9 +119,51 @@ run step 2 command again
             </div>
         </div>
     </section>
-    <section>
-        <div class="bg-[var(--blue)]">
+    <section id="testing">
+        <div class="bg-blue max-w-385.185 flex flex-col items-center">
+            <div class="bubble-img p-4">
+                <img class="w-167.5 h-96 object-fill mr-3" src="./images/placeholder.png" alt="">
+                <div class="relative w-">
+                    <img class="w-201.935 h-96" src="./images/new-bubble.png" alt="">
+                    <div class="absolute left-1/4 top-55/100">
+                        <p class="text-center text-1xl text-blue font-bold">new to coding?</p>
+                        <p>we gotchu! beginners welcome</p>
+                    </div>
+                </div>
+            </div>
 
+            <div class="bubble-img p-4">
+                <div class="relative">
+                    <img class="w-201.935 h-96" src="./images/packlist-bubble.png" alt="">
+                    <div class="absolute left-1/4 top-55/100">
+                        <p class="text-center text-1xl text-blue font-bold">what to bring?</p>
+                        <p>we gotchu! beginners welcome</p>
+                    </div>
+                </div>
+                <img class="w-167.5 h-96 object-fill ml-3" src="./images/placeholder.png" alt="">
+            </div>
+
+            <div class="bubble-img p-4">
+                <img class="w-167.5 h-96 object-fill mr-3" src="./images/placeholder.png" alt="">
+                <div class="relative w-">
+                    <img class="w-201.935 h-96" src="./images/parents-bubble.png" alt="">
+                    <div class="absolute left-1/4 top-55/100">
+                        <p class="text-center text-1xl text-blue font-bold">my parents are worried...</p>
+                        <p>we gotchu! beginners welcome</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bubble-img p-4">
+                <div class="relative">
+                    <img class="w-201.935 h-96" src="./images/eligibility-bubble.png" alt="">
+                    <div class="absolute left-1/4 top-55/100">
+                        <p class="text-center text-1xl text-blue font-bold">am i eligible?</p>
+                        <p>we gotchu! beginners welcome</p>
+                    </div>
+                </div>
+                <img class="w-167.5 h-96 object-fill ml-3" src="./images/placeholder.png" alt="">
+            </div>
             
         </div>
     </section>
