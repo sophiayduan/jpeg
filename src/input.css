@@ -6,7 +6,8 @@
 @theme { /*custom colors instantiation, can use colors below as a default tailwindcss color (etc. bg-yellow or text-teal)*/
     --color-yellow: #fbde9c;
     --color-blue: #3372b9;
-    --color-white: #f0e9e1;
+    --color-beige: #f0e9e1;
+    --color-white: #ffffff;
     --color-black: #1f262c;
     --color-teal: #549e91;
 }
