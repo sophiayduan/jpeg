@@ -434,11 +434,17 @@
   .flex-col {
     flex-direction: column;
   }
+  .flex-row {
+    flex-direction: row;
+  }
   .place-items-center {
     place-items: center;
   }
   .items-center {
     align-items: center;
+  }
+  .justify-between {
+    justify-content: space-between;
   }
   .justify-center {
     justify-content: center;
@@ -590,6 +596,9 @@
   .text-center {
     text-align: center;
   }
+  .text-left {
+    text-align: left;
+  }
   .text-right {
     text-align: right;
   }
@@ -622,6 +631,9 @@
   }
   .text-beige {
     color: var(--color-beige);
+  }
+  .text-black {
+    color: var(--color-black);
   }
   .text-blue {
     color: var(--color-blue);
