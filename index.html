@@ -31,8 +31,8 @@ object-scale-down -> keeps original scale of image and just scales down based on
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+US+Trad:wght@100..400&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>JPEG</title>
 </head>
-<body>
-    <div class=" fixed inset-10 z-20 pointer-events-none" >
+<body >
+    <div class=" fixed inset-10 z-20 pointer-events-none" id="overlay">
         <div class="size-45  border-t-4 border-l-4 p-6 ">
             <div class="flex justify-center items-center absolute gap-3">
                 <div class="size-8 rounded-full bg-red-500"></div>
@@ -41,7 +41,7 @@ object-scale-down -> keeps original scale of image and just scales down based on
         </div>
         <div class="size-45  absolute top-0 right-0 border-t-4 border-r-4 p-6 ">
             <nav class=" text-right text-4xl flex flex-col font-bold overflow-visible pointer-events-auto"> 
-                <a href = "#about" class="justify-start transition duration-150 ease-in-out  hover:underlinet">ABOUT</a>
+                <a href = "#about" class="justify-start transition duration-150 ease-in-out  hover:underline">ABOUT</a>
                 <a href = "#faq" class="hover:underline ">FAQ</a>
                 <a href = "#signup" class="hover:underline">SIGNUP</a>
             </nav>
@@ -70,17 +70,17 @@ object-scale-down -> keeps original scale of image and just scales down based on
         <div class="flex flex-col gap-2 items-center">
             <!-- <h2 class="text-right text-5xl text-teal font-bold ">JULY 5-6</h2> -->
             <img src="images/jpeg.png" target="blank" loading="lazy" class="h-50">
-            <h3 class="text-blue py-1 text-2xl text-center font-playwrite">25h to build a game</h3>            
+            <h3 class="text-blue py-1 text-2xl text-center font-playwrite" >25h to build a game</h3>            
             <button type="button"   
                 class=" mt-5 transition-all duration-500 ease-in-out rounded-lg hover:underline 
-                text-xl hover:scale-110 text-beige bg-teal h-16 w-60 font-bold shadow-2xl shadow-grey-100">
+                text-xl hover:scale-110 hover:shadow-2xl text-beige bg-teal h-16 w-60 font-bold ">
                 <p class="text-beige">SIGN UP NOW!</p>
             </button>
                
         </div>
     </section>
     <section>
-        <div class="px-60 relative h-auto w-screen bg-blue py-10">
+        <div class="sides relative h-auto w-screen bg-blue py-10">
             <div class=" flex  items-center p-10 rounded-2xl w-full gap-10 h-full bg-white justify-center">
                 <img src="/images/irl/IMG_0608.jpg" class="  bg-gray-500 rounded-2xl w-80 ">
                 <p class="leading-[1.5] text-2xl  min-w-60">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque 
@@ -91,7 +91,7 @@ object-scale-down -> keeps original scale of image and just scales down based on
         <!-- <div class="relative w-60 h-80 bg-blue"></div> -->
     </section>
 
-    <section id = "about" class="px-60 pt-20 pb-20 bg-yellow h-180"> <!-- height is not very responsive btw.. -->
+    <section id = "about" class="sides pt-20 pb-20 bg-yellow h-180"> <!-- height is not very responsive btw.. -->
         <h2 class="text-center text-5xl text-blue pb-18 font-bold ">BUILD WHAT YOU LOVE!!</h2>
         <div class="">
             <img src="./images/rope.png" alt="rope" class="absolute left-0">
@@ -120,8 +120,8 @@ object-scale-down -> keeps original scale of image and just scales down based on
         </div>
     </section>
 
-    <section id = "faq" class="bg-blue px-60 h-fit py-14">
-        <h2 class="text-5xl text-beige font-bold pb-10">JOIN US FOR<span class="ml-6 text-4xl text-yellow" style="font-family: Playwrite US Trad">the vibes</span></h2>
+    <section id = "faq" class="bg-blue  sides h-fit py-14">
+        <h2 class="text-5xl text-beige font-bold pb-10" style="background:linear-gradient(to right,#f0e9e1,#fbde9c);background-clip:text;color:transparent">JOIN US FOR<span class="ml-6 text-4xl " style="font-family: Playwrite US Trad">the vibes</span></h2>
             <section id="panels" class="flex flex-col gap-10">
                 <div class="h-fit w-full bg-beige flex flex-wrap gap-[25px] p-0 m-0 bg-black" 
                 style="border: 30px solid transparent; 
@@ -156,11 +156,11 @@ object-scale-down -> keeps original scale of image and just scales down based on
             </section>
 
     </section>  
-    <section class="px-60 bg-beige">
+    <section class=" sides bg-beige">
         <h2 class="text-5xl text-blue font-bold py-10">SCHEDULE</span></h2>
 
     </section>
-    <section class="px-60 bg-blue h-fit py-10">
+    <section class=" sides bg-blue h-fit py-10">
         <h2 class="text-5xl text-beige font-bold pb-10">FAQ</h2>
 
         <div class="flex flex-row justify-between pb-10" >
@@ -173,7 +173,7 @@ object-scale-down -> keeps original scale of image and just scales down based on
         
         <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1bI_ZmaIuokMg3hbqiNDMjFbIuKs4qak&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
         </div>
-        <div class=" w-screen h-fit bg-teal -mx-60 pb-10 p-6 px-60">
+        <div class=" w-screen h-fit bg-teal -mx-60 pb-10 p-6  sides">
             <h3 class="text-yellow py-1 text-2xl text-left font-playwrite">Is everything free?</h3>
             <h2 class="text-7xl text-beige font-bold py-3">EVERYTHING IS FREE!!</h2>
             <h3 class="text-beige py-1 text-2xl text-right">food, drinks, t-shirt, swag, & vibes! </h3>
