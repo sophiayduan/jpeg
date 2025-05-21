@@ -79,10 +79,10 @@ object-scale-down -> keeps original scale of image and just scales down based on
         </div>
     </section>
     <section>
-        <div class="px-60 relative h-80 w-screen bg-blue">
-            <div class=" flex items-center relative  -top-10 absolute rounded-2xl w-[80%] h-full bg-white">
-                <div class=" mx-10 h-[75%] w-[50%] bg-gray-500 rounded-2xl"></div>
-                <p class="mx-6 leading-[1.5] text-2xl w-[50%]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque 
+        <div class="px-60 relative h-auto w-screen bg-blue py-10">
+            <div class=" flex  items-center p-10 rounded-2xl w-full gap-10 h-full bg-white justify-center">
+                <img src="/images/irl/IMG_0608.jpg" class="  bg-gray-500 rounded-2xl w-80 ">
+                <p class="leading-[1.5] text-2xl  min-w-60">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque 
                     vel risus lobortis elit iaculis aliquet quis eu magna. Mauris 
                     porttitor odio odio, vitae maximus turpis tincidunt tincidunt. </p>
             </div>
@@ -122,15 +122,18 @@ object-scale-down -> keeps original scale of image and just scales down based on
     <section id = "faq" class="bg-blue px-60 h-fit py-14">
         <h2 class="text-5xl text-beige font-bold pb-10">JOIN US FOR<span class="ml-6 text-4xl text-yellow" style="font-family: Playwrite US Trad">the vibes</span></h2>
             <section id="panels" class="flex flex-col gap-10">
-                <div class="h-80 w-full bg-beige flex gap-[25px] p-0 m-0 bg-black" 
+                <div class="h-fit w-full bg-beige flex flex-wrap gap-[25px] p-0 m-0 bg-black" 
                 style="border: 30px solid transparent; 
                 border-image-slice: 33% 33% 33% 33%;
                 border-image-width: 1.75em 1.75em 1.75em 1.75em;
                 border-image-outset: 0px 0px 0px 0px;
                 border-image-repeat: round;
                 border-image-source: url(images/h-border.png)">
-                    <div class="w-[30%] h-full bg-white" ></div>
-                    <div class="w-[70%] h-full bg-yellow" ></div>
+                    <div class="w-[60%] h-auto bg-white flex flex-col justify-center items-center p-6">
+                        <h4 class="text-3xl">WORKSHOPS</h4>
+                        <p>learn how to build websites, solder, [other workshops]</p>
+                    </div>
+                        <img src="images/irl/IMG_0562.jpg" class="h-50 w-auto">
                 </div>
 
                 <div class="h-80 w-full bg-beige flex gap-[25px] p-0 m-0 bg-black" 
@@ -141,7 +144,10 @@ object-scale-down -> keeps original scale of image and just scales down based on
                 border-image-repeat: round;
                 border-image-source: url(images/h-border.png)">
                     <div class="w-[50%] h-full bg-yellow" ></div>
-                    <div class="w-[50%] h-full bg-white" ></div>
+                    <div class="w-[50%] h-full bg-white flex flex-col justify-center items-center p-6">
+                        <h4 class="text-3xl">WORKSHOPS</h4>
+                        <p>learn how to build websites, solder, [other workshops]</p>
+                    </div>
                 </div>
             </section>
 
@@ -207,7 +213,9 @@ object-scale-down -> keeps original scale of image and just scales down based on
             <div class="flex pt-2 w-full justify-center">
                 <div class="grid place-items-center gap-1">
                     <p class="flex justify-center font-playwrite">made by teenagers, for teenagers</p>
-                    <a href="https://github.com/sophiayduan/jpeg" target="_blank" class="underline">Github</a>
+                    <div class="flex gap-1">
+                        <a href="https://github.com/sophiayduan/jpeg" target="_blank" class="underline">Github</a>
+                    </div>
                 </div>
 
             </div>
