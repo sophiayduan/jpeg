@@ -33,21 +33,21 @@ object-scale-down -> keeps original scale of image and just scales down based on
 </head>
 <body >
     <div class=" fixed inset-10 z-20 pointer-events-none" id="overlay">
-        <div class="size-45  border-t-4 border-l-4 p-6 ">
-            <div class="flex justify-center items-center absolute gap-3">
+        <div class="big border-t-4 border-l-4 p-6 ">
+            <div class="hide flex justify-center items-center absolute gap-3">
                 <div class="size-8 rounded-full bg-red-500"></div>
                 <h4 class="text-4xl font-bold">REC</h4>
             </div>
         </div>
-        <div class="size-45  absolute top-0 right-0 border-t-4 border-r-4 p-6 ">
-            <nav class=" text-right text-4xl flex flex-col font-bold overflow-visible pointer-events-auto"> 
+        <div class="big absolute top-0 right-0 border-t-4 border-r-4 p-6 ">
+            <nav class="hide text-right text-4xl flex flex-col font-bold overflow-visible pointer-events-auto"> 
                 <a href = "#about" class="justify-start transition duration-150 ease-in-out  hover:underline">ABOUT</a>
                 <a href = "#faq" class="hover:underline ">FAQ</a>
                 <a href = "#signup" class="hover:underline">SIGNUP</a>
             </nav>
         </div>
-        <div class="size-45  absolute bottom-0 border-b-4 border-l-4 p-6 flex flex-col gap-2">
-            <div class="flex justify-center gap-2">
+        <div class="big absolute bottom-0 border-b-4 border-l-4 p-6 flex flex-col gap-2">
+            <div class="flex hide justify-center gap-2">
                 <img src="images/camera.png" alt="" class="size-10">
                 <p class="text-xl flex items-center">ON</p>
             </div>
@@ -57,15 +57,14 @@ object-scale-down -> keeps original scale of image and just scales down based on
             </div>
             
         </div>
-        <div class="size-45  absolute bottom-0 right-0 border-b-4 border-r-4 p-6">
+        <div class="big absolute bottom-0 right-0 border-b-4 border-r-4 p-6">
             <!-- <p class="text-right bottom-0 relative text-xl">Ottawa</p> -->
         </div>
 
 
     </div>
-    <div class="left-65 -mt-5 absolute  hover:rotate-4 transition-all duration-80">
-        <img src="https://assets.hackclub.com/flag-orpheus-top.svg" target="blank">
-    </div>
+        <img id="hc" src="https://assets.hackclub.com/flag-orpheus-top.svg" target="blank" class="left-[20%] -mt-5 absolute  hover:rotate-4 transition-all duration-80">
+
     <section class="h-screen flex justify-center items-center bg-beige">
         <div class="flex flex-col gap-2 items-center">
             <!-- <h2 class="text-right text-5xl text-teal font-bold ">JULY 5-6</h2> -->
@@ -81,9 +80,9 @@ object-scale-down -> keeps original scale of image and just scales down based on
     </section>
     <section>
         <div class="sides relative h-auto w-screen bg-blue py-10">
-            <div class=" flex  items-center p-10 rounded-2xl w-full gap-10 h-full bg-white justify-center">
-                <img src="/images/irl/IMG_0608.jpg" class="  bg-gray-500 rounded-2xl w-80 ">
-                <p class="leading-[1.5] text-2xl  min-w-60">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque 
+            <div class=" flex flex-wrap items-center p-10 rounded-2xl w-full gap-10 h-full bg-white justify-center">
+                <img src="/images/irl/IMG_0608.jpg" class=" bg-gray-500 rounded-2xl w-80 ">
+                <p class="leading-[1.5] text-2xl flex-1 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque 
                     vel risus lobortis elit iaculis aliquet quis eu magna. Mauris 
                     porttitor odio odio, vitae maximus turpis tincidunt tincidunt. </p>
             </div>
@@ -91,29 +90,29 @@ object-scale-down -> keeps original scale of image and just scales down based on
         <!-- <div class="relative w-60 h-80 bg-blue"></div> -->
     </section>
 
-    <section id = "about" class="sides pt-20 pb-20 bg-yellow h-180"> <!-- height is not very responsive btw.. -->
+    <section id = "about" class="sides pt-20 pb-20 bg-yellow h-auto"> 
         <h2 class="text-center text-5xl text-blue pb-18 font-bold ">BUILD WHAT YOU LOVE!!</h2>
         <div class="">
-            <img src="./images/rope.png" alt="rope" class="absolute left-0">
-            <div class="h-fit flex justify-center items-center absolute left-0">
-                <div class ="flex gap-30 w-screen justify-center text-5xl text-blue text-center">
+            <img id="rope" src="./images/rope.png" alt="rope" class="absolute left-0">
+            <div class="h-auto flex flex-wrap justify-center items-center left-0">
+                <div class ="flex flex-wrap gap-30 w-screen justify-center text-5xl text-blue text-center">
                     <div class="group flex flex-col gap-6 hover:scale-105 transition-all duration-200 ease-in-out">
                         <div id="pic" class ="group-hover:rotate-5 rounded-xs aspect-[7/10] w-60 bg-blue pt-5 px-5 pb-18 rotate-3 transition-all duration-200 ease-in-out">
                             <div class ="rounded-sm bg-white w-full h-full"></div>   
                         </div>
-                        <p class="pt-5 group-hover:font-bold transition ease-in-out duration-400">SIGN UP</p>
+                        <h2 class="pt-5 group-hover:font-bold transition ease-in-out duration-400">SIGN UP</p>
                     </div>
                     <div class="group flex flex-col gap-6 hover:scale-105 transition-all duration-200 ease-in-out">
                         <div id="pic" class ="group-hover:rotate-355 rounded-xs aspect-[7/10] w-60 bg-blue pt-5 px-5 pb-18 rotate-357 transition-all duration-200 ease-in-out">
                             <div class ="rounded-sm bg-white w-full h-full"></div>   
                         </div>
-                        <p class="pt-5 group-hover:font-bold transition ease-in-out duration-400">BUILD</p>
+                        <h2 class="pt-5 group-hover:font-bold transition ease-in-out duration-400">BUILD</p>
                     </div>
                     <div class="group flex flex-col gap-6 hover:scale-105 transition-all duration-200 ease-in-out">
                         <div id="pic" class ="group-hover:rotate-5 rounded-xs aspect-[7/10] w-60 bg-blue pt-5 px-5 pb-18 rotate-3 transition-all duration-200 ease-in-out">
                             <div class ="rounded-sm bg-white w-full h-full"></div>   
                         </div>
-                        <p class="pt-5 group-hover:font-bold transition ease-in-out duration-400">SHOWCASE</p>
+                        <h2 class="pt-5 group-hover:font-bold transition ease-in-out duration-400">SHOWCASE</p>
                     </div>
                 </div>
             </div>
