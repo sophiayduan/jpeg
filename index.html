@@ -67,18 +67,16 @@ object-scale-down -> keeps original scale of image and just scales down based on
         <img src="https://assets.hackclub.com/flag-orpheus-top.svg" target="blank">
     </div>
     <section class="h-screen flex justify-center items-center bg-beige">
-        <div class="flex flex-col gap-2">
-            <h2 class="text-right text-5xl text-teal font-bold ">JULY 5-6</h2>
+        <div class="flex flex-col gap-2 items-center">
+            <!-- <h2 class="text-right text-5xl text-teal font-bold ">JULY 5-6</h2> -->
             <img src="images/jpeg.png" target="blank" loading="lazy" class="h-50">
-            <h3 class="text-blue py-1 text-2xl text-center font-playwrite">25h to build a game</h3>
-            <div class="items-center">
-                <div class="w-auto h-auto">
-                    <button type="button"   
-                    class=" transition-all duration-500 ease-in-out rounded-lg hover:underline 
-                    text-xl hover:scale-110 text-beige bg-teal h-16 w-60 font-bold shadow-2xl shadow-grey-100">
-                    <p class="text-beige">SIGN UP NOW!</p></button>
-                </div>
-            </div>
+            <h3 class="text-blue py-1 text-2xl text-center font-playwrite">25h to build a game</h3>            
+            <button type="button"   
+                class=" mt-5 transition-all duration-500 ease-in-out rounded-lg hover:underline 
+                text-xl hover:scale-110 text-beige bg-teal h-16 w-60 font-bold shadow-2xl shadow-grey-100">
+                <p class="text-beige">SIGN UP NOW!</p>
+            </button>
+               
         </div>
     </section>
     <section>
@@ -132,26 +130,29 @@ object-scale-down -> keeps original scale of image and just scales down based on
                 border-image-outset: 0px 0px 0px 0px;
                 border-image-repeat: round;
                 border-image-source: url(images/h-border.png)">
-                    <div class="w-[60%] h-auto bg-white flex flex-col justify-center items-center p-6">
-                        <h4 class="text-3xl">WORKSHOPS</h4>
-                        <p>learn how to build websites, solder, [other workshops]</p>
+                    <div class="w-[50%] h-auto bg-beige flex grow-1 gap-2 flex-col text-center justify-center items-center px-10 text-xl">
+                        <h4 class="text-4xl py-2">WORKSHOPS</h4>
+                        <p>learn how to build websites, solder, [workshops]</p>
+                        <p>Want to host a workshop? Mention that in the sign up form!</p>
                     </div>
-                        <img src="images/irl/IMG_0562.jpg" class="h-50 w-auto">
+                        <img src="images/irl/IMG_0562.jpg" class="h-60 w-auto">
                 </div>
-
-                <div class="h-80 w-full bg-beige flex gap-[25px] p-0 m-0 bg-black" 
+                <div class="h-fit w-full bg-beige flex flex-wrap gap-[25px] p-0 m-0 bg-black" 
                 style="border: 30px solid transparent; 
                 border-image-slice: 33% 33% 33% 33%;
                 border-image-width: 1.75em 1.75em 1.75em 1.75em;
                 border-image-outset: 0px 0px 0px 0px;
                 border-image-repeat: round;
                 border-image-source: url(images/h-border.png)">
-                    <div class="w-[50%] h-full bg-yellow" ></div>
-                    <div class="w-[50%] h-full bg-white flex flex-col justify-center items-center p-6">
-                        <h4 class="text-3xl">WORKSHOPS</h4>
-                        <p>learn how to build websites, solder, [other workshops]</p>
+                    <img src="images/irl/IMG_0699.jpg" class="h-60 w-auto">
+
+                    <div class="w-[50%] h-auto bg-beige flex grow-1 gap-2 flex-col text-center justify-center items-center px-10 text-xl">
+                        <h4 class="text-4xl py-2">AWESOME TIME</h4>
+                        <p>free food, fun games, secret prizes, new friend. Welcome to people of ALL skill levels!</p>
                     </div>
                 </div>
+
+               
             </section>
 
     </section>  
@@ -172,14 +173,13 @@ object-scale-down -> keeps original scale of image and just scales down based on
         
         <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1bI_ZmaIuokMg3hbqiNDMjFbIuKs4qak&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
         </div>
-  
         <div class=" w-screen h-fit bg-teal -mx-60 pb-10 p-6 px-60">
             <h3 class="text-yellow py-1 text-2xl text-left font-playwrite">Is everything free?</h3>
             <h2 class="text-7xl text-beige font-bold py-3">EVERYTHING IS FREE!!</h2>
             <h3 class="text-beige py-1 text-2xl text-right">food, drinks, t-shirt, swag, & vibes! </h3>
         </div> 
   
-        <div class="flex gap-[8%] pt-10 leading-[1.5] text-lg">
+        <div class="flex gap-[8%] pt-10 leading-[1.5] text-xl">
             <div class="h-auto w-[50%] bg-beige flex gap-[25px] p-0 m-0 bg-black" 
                 style="border: 30px solid transparent; 
                 border-image-slice: 33% 33% 33% 33%;
@@ -204,7 +204,7 @@ object-scale-down -> keeps original scale of image and just scales down based on
                         </div>
                     </div>
             </div>
-            <div class="h-auto w-[50%] bg-beige flex gap-[25px] p-0 m-0 bg-black" 
+            <!-- <div class="h-auto w-[50%] bg-beige flex gap-[25px] p-0 m-0 bg-black" 
                 style="border: 30px solid transparent; 
                 border-image-slice: 33% 33% 33% 33%;
                 border-image-width: 1.75em 1.75em 1.75em 1.75em;
@@ -220,6 +220,31 @@ object-scale-down -> keeps original scale of image and just scales down based on
                         <div class="flex flex-wrap gap-2 p-6 bg-beige">
                             <h4 class="text-3xl">My parents are worried!</h4>
                             <p>We're here to help! Send them our parent guide. More questions? They can reach out to us at (some email) and we'll make sure to answer questions</p>
+                        </div>
+                        <img src="/images/irl/IMG_0801.jpg" class="border-3">
+
+                    </div>
+            </div> -->
+            <div class="h-auto w-[50%] bg-beige flex gap-[25px] p-0 m-0 bg-black" 
+                style="border: 30px solid transparent; 
+                border-image-slice: 33% 33% 33% 33%;
+                border-image-width: 1.75em 1.75em 1.75em 1.75em;
+                border-image-outset: 0px 0px 0px 0px;
+                border-image-repeat: round;
+                border-image-source: url(images/v-border.png)">
+                    <div class="grid h-full w-full bg-black gap-[25px]" >
+                        <div class="flex flex-wrap gap-2 p-6 bg-beige">
+                            <h4 class="text-3xl">What to bring?</h4>
+                            <ul class="list-disc pl-4">
+                                <li>Laptop, charger, drawing tablet, and anything you need to make a game</li>
+                                <li>Sleeping bag + whatever you need to spend the night</li>
+                                <li>Whatever you need to take a shower (please take a shower)</li>
+                            </ul>
+                        </div>
+                        <img src="/images/irl/IMG_0824.jpg" class="border-3">
+                        <div class="flex flex-wrap gap-2 p-6 bg-beige">
+                            <h4 class="text-3xl">Am I eligible?</h4>
+                            <p>18 or under? If yes, you're eligible! Any uncertainities, shoot us a quick email jpeg@hackclub.com</p>
                         </div>
                         <img src="/images/irl/IMG_0801.jpg" class="border-3">
 
