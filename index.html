@@ -57,8 +57,10 @@ object-scale-down -> keeps original scale of image and just scales down based on
             </div>
             
         </div>
-        <div class="big absolute bottom-0 right-0 border-b-4 border-r-4 p-6">
-            <!-- <p class="text-right bottom-0 relative text-xl">Ottawa</p> -->
+        <div class="big absolute bottom-0 right-0 flex flex-col items-baseline border-b-4 border-r-4">
+            <!-- <div class="h-auto w-20 bg-teal"></div>
+            <p class="bg-yellow text-xl bottom-0 pb-6">July 5-6, 2025</p> -->
+
         </div>
 
 
@@ -67,10 +69,9 @@ object-scale-down -> keeps original scale of image and just scales down based on
 
     <section class="h-screen flex justify-center items-center bg-beige">
         <div class="flex flex-col gap-2 ">
-            <!-- <h2 class="text-right text-5xl text-teal font-bold -mb-10">JULY 5-6</h2> -->
              <!-- <img src="images/jpeg.png" target="blank" loading="lazy" class="h-50"> -->
-             <!-- <h1 class="h-auto text-blue font-Bernoru text-center">.jpeg</h1> -->
-            <img src="images/jpeg.png" target="blank" loading="lazy" class="h-50">
+             <h1 class="text-blue font-Bernoru text-center">.jpeg</h1>
+            <!-- <img src="images/jpeg.png" target="blank" loading="lazy" class="h-50"> -->
             <h3 class="text-blue py-1 text-[200%] text-center font-playwrite" >25h to build a game</h3>            
             <a href="https://jpeg.fillout.com/register" target="_blank"
                 class="ml-[calc(50%-7.5rem)] flex items-center justify-center transition-all duration-500 ease-in-out rounded-lg hover:underline 
@@ -83,8 +84,8 @@ object-scale-down -> keeps original scale of image and just scales down based on
     <section>
         <div class="sides relative h-auto w-screen bg-blue py-10">
             <div class=" flex flex-wrap items-center p-10 rounded-2xl w-full gap-10 h-full bg-white justify-center">
-                <img src="/images/irl/IMG_0608.jpg" class=" bg-gray-500 rounded-2xl w-80 ">
-                <p class="leading-[1.5] text-2xl flex-1 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque 
+                <img src="/images/irl/IMG_0608.jpg" class="bg-gray-500 rounded-2xl w-80 ">
+                <p class="leading-[1.5] text-2xl flex-1 text-blue">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque 
                     vel risus lobortis elit iaculis aliquet quis eu magna. Mauris 
                     porttitor odio odio, vitae maximus turpis tincidunt tincidunt. </p>
             </div>
@@ -186,20 +187,20 @@ object-scale-down -> keeps original scale of image and just scales down based on
         </div>
         <div class=" w-screen h-fit bg-teal -mx-60 pb-10 p-6  sides">
             <h3 class="text-yellow py-1 text-2xl text-left font-playwrite">Is everything free?</h3>
-            <h1 class="text-7xl text-beige font-bold py-3">EVERYTHING IS FREE!!</h1>
+            <h2 class="text-7xl text-beige font-bold py-3">EVERYTHING IS FREE!!</h1>
             <h3 class="text-beige py-1 text-2xl text-right">food, drinks, t-shirt, swag, & vibes! </h3>
         </div> 
   
-        <div class="flex gap-[8%] pt-10 leading-[1.5] text-xl">
-            <div class="h-auto w-[50%] bg-beige flex gap-[25px] p-0 m-0 bg-black" 
+        <div class="flex flex-wrap justify-evenly pt-10 leading-[1.5] text-xl">
+            <div id="vert" class="h-auto bg-beige flex gap-[25px] p-0 m-0 bg-black" 
                 style="border: 30px solid transparent; 
                 border-image-slice: 33% 33% 33% 33%;
                 border-image-width: 1.75em 1.75em 1.75em 1.75em;
                 border-image-outset: 0px 0px 0px 0px;
                 border-image-repeat: round;
                 border-image-source: url(images/v-border.png)">
-                    <div class="grid h-full w-full bg-black gap-[25px]" >
-                        <img src="/images/irl/IMG_0801.jpg" class="border-3">
+                    <div class="grid h-full w-full bg-black gap-[25px] overflow-hidden" >
+                        <img src="/images/irl/IMG_0801.jpg" class="border-3 overflow-hidden">
                         <div class="flex flex-wrap gap-2 p-6 bg-beige">
                             <h4 class="text-3xl">What to bring?</h4>
                             <ul class="list-disc pl-4">
@@ -215,36 +216,16 @@ object-scale-down -> keeps original scale of image and just scales down based on
                         </div>
                     </div>
             </div>
-            <!-- <div class="h-auto w-[50%] bg-beige flex gap-[25px] p-0 m-0 bg-black" 
-                style="border: 30px solid transparent; 
-                border-image-slice: 33% 33% 33% 33%;
-                border-image-width: 1.75em 1.75em 1.75em 1.75em;
-                border-image-outset: 0px 0px 0px 0px;
-                border-image-repeat: round;
-                border-image-source: url(images/v-border.png)">
-                    <div class="grid h-full w-full bg-black gap-[25px]" >
-                        <div class="flex flex-wrap gap-2 p-6 bg-beige">
-                            <h4 class="text-3xl">New to coding?</h4>
-                            <p>We have plenty of mentors here to help! You can attend workshops and ask peers too. </p>
-                        </div>
-                        <div class="bg-blue h-auto w-full"></div>
-                        <div class="flex flex-wrap gap-2 p-6 bg-beige">
-                            <h4 class="text-3xl">My parents are worried!</h4>
-                            <p>We're here to help! Send them our parent guide. More questions? They can reach out to us at (some email) and we'll make sure to answer questions</p>
-                        </div>
-                        <img src="/images/irl/IMG_0801.jpg" class="border-3">
 
-                    </div>
-            </div> -->
-            <div class="h-auto w-[50%] bg-beige flex gap-[25px] p-0 m-0 bg-black" 
+            <div id="vert" class="h-auto bg-beige flex gap-[25px] p-0 m-0 bg-black" 
                 style="border: 30px solid transparent; 
                 border-image-slice: 33% 33% 33% 33%;
                 border-image-width: 1.75em 1.75em 1.75em 1.75em;
                 border-image-outset: 0px 0px 0px 0px;
                 border-image-repeat: round;
                 border-image-source: url(images/v-border.png)">
-                    <div class="grid h-full w-full bg-black gap-[25px]" >
-                        <div class="flex flex-wrap gap-2 p-6 bg-beige">
+                    <div class="grid h-auto w-fit bg-black gap-[25px] overflow-hidden" >
+                        <div class="w-fit flex flex-wrap gap-2 p-6 bg-beige">
                             <h4 class="text-3xl">What to bring?</h4>
                             <ul class="list-disc pl-4">
                                 <li>Laptop, charger, drawing tablet, and anything you need to make a game</li>
