@@ -13,6 +13,8 @@
     --color-teal: #549e91;
    
 }
+
+
 @media(max-width:700px){
   #overlay{
     inset:10px;
@@ -61,6 +63,10 @@ h2 {
 }
 
 @layer base {
+  @font-face {
+    font-family: 'Bernoru';
+    src: url('public\bernoru\bernoru-blackultraexpanded.otf') format('otf');
+}
   body {
     font-family: 'Prompt', sans-serif;
   }
@@ -71,6 +77,15 @@ h2 {
 
   .font-playwrite {
     font-family: 'Playwrite US Trad', serif;
+  }
+  .font-bernoru {
+    font-family:'Bernoru';
+  }
+
+  h1{
+    font-size:14rem;
+    font-weight:900;
+    transform: scaleX(1.25);
   }
 }
 @layer utilities { /*custom utilities*/
