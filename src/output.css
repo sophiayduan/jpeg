@@ -239,9 +239,6 @@
   .m-0 {
     margin: calc(var(--spacing) * 0);
   }
-  .-mx-60 {
-    margin-inline: calc(var(--spacing) * -60);
-  }
   .-mt-5 {
     margin-top: calc(var(--spacing) * -5);
   }
@@ -376,6 +373,9 @@
   }
   .items-center {
     align-items: center;
+  }
+  .justify-between {
+    justify-content: space-between;
   }
   .justify-center {
     justify-content: center;
@@ -742,6 +742,10 @@
   .big {
     width: 11em;
     height: 11em;
+  }
+  #freesection {
+    padding-left: 15rem;
+    padding-right: 15rem;
   }
 }
 p, li {

@@ -52,7 +52,7 @@ object-scale-down -> keeps original scale of image and just scales down based on
                 <p class="text-xl flex items-center">ON</p>
             </div>
             <div>
-                <img src="./images/battery.png" alt="" class="absolute" id="battery">
+                <img src="./images/battery.png" alt="" class="absolute">
                 <div class="w-27 h-12 bg-teal absolute left-25/100 top-57/100 rounded-sm" id="progress-bar"></div>
             </div>
             
@@ -95,31 +95,30 @@ object-scale-down -> keeps original scale of image and just scales down based on
 
     <section id = "about" class="sides pt-20 pb-20 bg-yellow h-auto"> 
         <h2 class="text-center text-5xl text-blue pb-18 font-bold ">BUILD WHAT YOU LOVE!!</h2>
-        <div class="">
-            <img id="rope" src="./images/rope.png" alt="rope" class="absolute left-0">
-            <div class="h-auto flex flex-wrap justify-center items-center left-0">
-                <div class ="flex flex-wrap gap-30 w-screen justify-center text-5xl text-blue text-center">
-                    <div class="group flex flex-col gap-6 hover:scale-105 transition-all duration-200 ease-in-out">
-                        <div id="pic" class ="group-hover:rotate-5 rounded-xs aspect-[7/10] w-60 bg-beige pt-5 px-5 pb-18 rotate-3 transition-all duration-200 ease-in-out">
-                            <div class ="rounded-sm bg-blue w-full h-full"></div>   
-                        </div>
-                        <h2 class="pt-5 group-hover:font-bold transition ease-in-out duration-400">SIGN UP</p>
+        <img id="rope" src="./images/rope.png" alt="rope" class="absolute left-0">
+        <div class="h-auto flex flex-wrap justify-center items-center left-0">
+            <div class ="flex flex-wrap justify-between w-full bg-red-500 text-5xl text-blue text-center">
+                <div class="group flex flex-col gap-6 hover:scale-105 transition-all duration-200 ease-in-out">
+                    <div id="pic" class ="group-hover:rotate-5 rounded-xs aspect-[7/10] w-60 bg-beige pt-5 px-5 pb-18 rotate-3 transition-all duration-200 ease-in-out">
+                        <div class ="rounded-sm bg-blue w-full h-full"></div>   
                     </div>
-                    <div class="group flex flex-col gap-6 hover:scale-105 transition-all duration-200 ease-in-out">
-                        <div id="pic" class ="group-hover:rotate-355 rounded-xs aspect-[7/10] w-60 bg-beige pt-5 px-5 pb-18 rotate-357 transition-all duration-200 ease-in-out">
-                            <div class ="rounded-sm bg-blue w-full h-full"></div>   
-                        </div>
-                        <h2 class="pt-5 group-hover:font-bold transition ease-in-out duration-400">BUILD</p>
+                    <h2 class="pt-5 group-hover:font-bold transition ease-in-out duration-400">SIGN UP</p>
+                </div>
+                <div class="group flex flex-col gap-6 hover:scale-105 transition-all duration-200 ease-in-out">
+                    <div id="pic" class ="group-hover:rotate-355 rounded-xs aspect-[7/10] w-60 bg-beige pt-5 px-5 pb-18 rotate-357 transition-all duration-200 ease-in-out">
+                        <div class ="rounded-sm bg-blue w-full h-full"></div>   
                     </div>
-                    <div class="group flex flex-col gap-6 hover:scale-105 transition-all duration-200 ease-in-out">
-                        <div id="pic" class ="group-hover:rotate-5 rounded-xs aspect-[7/10] w-60 bg-beige pt-5 px-5 pb-18 rotate-3 transition-all duration-200 ease-in-out">
-                            <div class ="rounded-sm bg-blue w-full h-full"></div>   
-                        </div>
-                        <h2 class="pt-5 group-hover:font-bold transition ease-in-out duration-400">SHOWCASE</p>
+                    <h2 class="pt-5 group-hover:font-bold transition ease-in-out duration-400">BUILD</p>
+                </div>
+                <div class="group flex flex-col gap-6 hover:scale-105 transition-all duration-200 ease-in-out">
+                    <div id="pic" class ="group-hover:rotate-5 rounded-xs aspect-[7/10] w-60 bg-beige pt-5 px-5 pb-18 rotate-3 transition-all duration-200 ease-in-out">
+                        <div class ="rounded-sm bg-blue w-full h-full"></div>   
                     </div>
+                    <h2 class="pt-5 group-hover:font-bold transition ease-in-out duration-400">SHOWCASE</p>
                 </div>
             </div>
         </div>
+    
     </section>
 
     <section id = "faq" class="bg-blue  sides h-fit py-14">
@@ -185,12 +184,14 @@ object-scale-down -> keeps original scale of image and just scales down based on
         
         <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1bI_ZmaIuokMg3hbqiNDMjFbIuKs4qak&ehbc=2E312F&noprof=1" class="rounded-lg grow-1 h-120"></iframe>
         </div>
-        <div class=" w-screen h-fit bg-teal -mx-60 pb-10 p-6  sides">
+    </section>
+        <div id ="freesection" class=" w-screen h-fit bg-teal pb-10 p-6  ">
             <h3 class="text-yellow py-1 text-2xl text-left font-playwrite">Is everything free?</h3>
             <h2 class="text-7xl text-beige font-bold py-3">EVERYTHING IS FREE!!</h1>
             <h3 class="text-beige py-1 text-2xl text-right">food, drinks, t-shirt, swag, & vibes! </h3>
         </div> 
-  
+        
+    <section class="sides bg-blue">
         <div class="flex flex-wrap justify-evenly pt-10 leading-[1.5] text-xl">
             <div id="vert" class="h-auto bg-beige flex gap-[25px] p-0 m-0 bg-black" 
                 style="border: 30px solid transparent; 
