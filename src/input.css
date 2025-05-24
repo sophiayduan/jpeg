@@ -40,6 +40,48 @@
     display:none;
   }
 
+  .battery-container {
+    margin-left: -3vw;
+  }
+
+  .rec {
+    margin-left: -3vw;
+    top: 2vh;
+  }
+
+  .rec h4 {
+    font-size: 5vw;
+  }
+
+  .rec div {
+    width: 5vw;
+    height: 5vw;
+  }
+
+  .annoying {
+    margin-top: 3vh;
+    font-size: 10vw;
+  }
+
+  .banner {
+    margin-left: 0;
+    height: 18vh;
+  }
+
+  .banner h3 {
+    font-size: 4vw;
+  }
+
+  .banner h2 {
+    font-size: 80vw;
+  }
+
+  .mobile-battery {
+    visibility: visible;
+    width: 100px;
+    height: 40px;
+  }
+
  
 }
 @media(min-width:700px){
@@ -53,13 +95,15 @@
     height:11em;
   }
 
+  .mobile-battery {
+    visibility: hidden;
+  }
+
   #freesection{
     padding-left:15rem;
     padding-right:15rem;
   }
 
-
-  
 }
 
 

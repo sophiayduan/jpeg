@@ -34,7 +34,7 @@ object-scale-down -> keeps original scale of image and just scales down based on
 <body >
     <div class=" fixed inset-10 z-20 pointer-events-none" id="overlay">
         <div class="big border-t-4 border-l-4 p-6 ">
-            <div class="hide flex justify-center items-center absolute gap-3">
+            <div class="rec flex justify-center items-center absolute gap-3">
                 <div class="size-8 rounded-full bg-red-500"></div>
                 <h4 class="text-4xl font-bold">REC</h4>
             </div>
@@ -47,20 +47,22 @@ object-scale-down -> keeps original scale of image and just scales down based on
             </nav>
         </div>
         <div class="big absolute bottom-0 border-b-4 border-l-4 p-6 flex flex-col gap-2">
-            <div class="flex hide justify-center gap-2">
+            <div class="flex hide justify-center gap-2 ml-[-1vw]">
                 <img src="images/camera.png" alt="" class="size-10">
                 <p class="text-xl flex items-center">ON</p>
             </div>
-            <div>
-                <img src="./images/battery.png" alt="" class="absolute">
-                <div class="w-27 h-12 bg-teal absolute left-25/100 top-57/100 rounded-sm" id="progress-bar"></div>
+            <div class="battery-container ml-[-1vw]">
+                <img src="./images/battery.png" alt="" class="absolute" id="battery">
+                <div class="invisible w-10 h-30/100 bg-teal absolute left-29/100 top-55/100 rounded-sm" id="mobile-battery"></div> <!-- not disappearing on laptop screen?? pernamnently hidden rn-->
+                <div class="hide w-27 h-12 bg-teal absolute left-16/100 top-57/100 rounded-sm" id="progress-bar"></div>
             </div>
             
         </div>
         <div class="big absolute bottom-0 right-0 flex flex-col items-baseline border-b-4 border-r-4">
-            <!-- <div class="h-auto w-20 bg-teal"></div>
-            <p class="bg-yellow text-xl bottom-0 pb-6">July 5-6, 2025</p> -->
-
+            <div class="hide flex flex-col mt-[6vh] annoying">
+                <p class="text-right font-bold"  style="font-size: 2.5vw;">JULY 5-6</p>
+                <p class="text-right font-bold" style="font-size: 2.5vw;">2025</p>
+            </div>
         </div>
 
 
@@ -97,6 +99,7 @@ object-scale-down -> keeps original scale of image and just scales down based on
         <h2 class="text-center text-5xl text-blue pb-18 font-bold ">BUILD WHAT YOU LOVE!!</h2>
         <img id="rope" src="./images/rope.png" alt="rope" class="absolute left-0">
         <div class="h-auto flex flex-wrap justify-center items-center left-0">
+
             <div class ="flex flex-wrap justify-center gap-20 w-full text-5xl text-blue text-center">
                 <div class="group flex flex-col gap-6 hover:scale-105 transition-all duration-200 ease-in-out">
                     <div id="pic" class ="group-hover:rotate-5 rounded-xs aspect-[7/10] w-60 bg-beige pt-5 px-5 pb-18 rotate-3 transition-all duration-200 ease-in-out">
@@ -164,7 +167,7 @@ object-scale-down -> keeps original scale of image and just scales down based on
     <section class=" sides bg-blue h-fit py-10">
         <h2 class="text-5xl text-beige font-bold pb-10">FAQ</h2>
 
-        <div class="flex flex-wrap gap-5 items-center pb-10" >
+        <div class="flex flex-wrap gap-8 items-center pb-10" >
             <!-- <div class=" h-fit rounded-lg bg-yellow p-6 ">
                 <h3 class="text-2xl text-black font-bold">TIME</h3>
                 <p class="text-lg">JULY 5 2:00PM - JULY 6 3:00PM</p>
@@ -172,7 +175,7 @@ object-scale-down -> keeps original scale of image and just scales down based on
                 <p>TBD</p>
             </div> -->
             <div class="group flex flex-col gap-6 hover:scale-105 transition-all duration-200 ease-in-out">
-                <div id="pic" class ="group-hover:rotate-355 rounded-xs aspect-[7/10] bg-teal w-80 pt-5 px-5 pb-18 rotate-357 transition-all duration-200 ease-in-out">
+                <div id="pic" class ="group-hover:rotate-355 rounded-xs aspect-[7/10] bg-yellow w-80 pt-5 px-5 pb-18 rotate-357 transition-all duration-200 ease-in-out">
                     <div class ="rounded-sm bg-white w-full h-full p-6">
                         <h3 class="text-2xl text-black font-bold">TIME</h3>
                         <p class="text-lg">JULY 5 2:00PM - JULY 6 3:00PM</p>
@@ -185,10 +188,10 @@ object-scale-down -> keeps original scale of image and just scales down based on
         <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1bI_ZmaIuokMg3hbqiNDMjFbIuKs4qak&ehbc=2E312F&noprof=1" class="rounded-lg grow-1 h-120"></iframe>
         </div>
     </section>
-        <div id ="freesection" class=" w-screen h-fit bg-teal pb-10 p-6  ">
-            <h3 class="text-yellow py-1 text-2xl text-left font-playwrite">Is everything free?</h3>
-            <h2 class="text-7xl text-beige font-bold py-3">EVERYTHING IS FREE!!</h1>
-            <h3 class="text-beige py-1 text-2xl text-right">food, drinks, t-shirt, swag, & vibes! </h3>
+        <div id ="freesection" class=" w-screen h-fit bg-teal pb-10 p-6   banner">
+            <h3 class="text-yellow py-1 text-3xl text-left font-playwrite">Is everything free?</h3>
+            <h2 class="text-beige font-bold py-3" style="font-size: 5.75vw">EVERYTHING IS FREE!!</h1>
+            <h3 class="text-beige py-1 text-3xl text-right">food, drinks, t-shirt, swag, & vibes! </h3>
         </div> 
         
     <section class="sides bg-blue">
