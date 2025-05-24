@@ -10,3 +10,4 @@ document.addEventListener("scroll", function () {
     "progress-bar"
   ).style.width = `${widthBasedOnScrollPercentage}vw`;
 })
+
