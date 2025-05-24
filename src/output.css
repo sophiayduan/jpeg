@@ -192,6 +192,9 @@
   .pointer-events-none {
     pointer-events: none;
   }
+  .invisible {
+    visibility: hidden;
+  }
   .absolute {
     position: absolute;
   }
@@ -206,18 +209,6 @@
   }
   .top-0 {
     top: calc(var(--spacing) * 0);
-  }
-  .top-53 {
-    top: calc(var(--spacing) * 53);
-  }
-  .top-53\/100 {
-    top: calc(53/100 * 100%);
-  }
-  .top-54 {
-    top: calc(var(--spacing) * 54);
-  }
-  .top-54\/100 {
-    top: calc(54/100 * 100%);
   }
   .top-55 {
     top: calc(var(--spacing) * 55);
@@ -240,53 +231,17 @@
   .left-0 {
     left: calc(var(--spacing) * 0);
   }
-  .left-5 {
-    left: calc(var(--spacing) * 5);
-  }
-  .left-5\/100 {
-    left: calc(5/100 * 100%);
-  }
   .left-16 {
     left: calc(var(--spacing) * 16);
   }
   .left-16\/100 {
     left: calc(16/100 * 100%);
   }
-  .left-17 {
-    left: calc(var(--spacing) * 17);
-  }
-  .left-17\/100 {
-    left: calc(17/100 * 100%);
-  }
-  .left-25 {
-    left: calc(var(--spacing) * 25);
-  }
-  .left-25\/100 {
-    left: calc(25/100 * 100%);
-  }
-  .left-27 {
-    left: calc(var(--spacing) * 27);
-  }
-  .left-27\/100 {
-    left: calc(27/100 * 100%);
-  }
-  .left-28 {
-    left: calc(var(--spacing) * 28);
-  }
-  .left-28\/100 {
-    left: calc(28/100 * 100%);
-  }
   .left-29 {
     left: calc(var(--spacing) * 29);
   }
   .left-29\/100 {
     left: calc(29/100 * 100%);
-  }
-  .left-30 {
-    left: calc(var(--spacing) * 30);
-  }
-  .left-30\/100 {
-    left: calc(30/100 * 100%);
   }
   .left-\[20\%\] {
     left: 20%;
@@ -318,6 +273,9 @@
   .grid {
     display: grid;
   }
+  .hidden {
+    display: none;
+  }
   .table {
     display: table;
   }
@@ -336,21 +294,6 @@
     width: calc(var(--spacing) * 16);
     height: calc(var(--spacing) * 16);
   }
-  .h-1 {
-    height: calc(var(--spacing) * 1);
-  }
-  .h-4 {
-    height: calc(var(--spacing) * 4);
-  }
-  .h-4\/10 {
-    height: calc(4/10 * 100%);
-  }
-  .h-4\/100 {
-    height: calc(4/100 * 100%);
-  }
-  .h-5 {
-    height: calc(var(--spacing) * 5);
-  }
   .h-12 {
     height: calc(var(--spacing) * 12);
   }
@@ -365,9 +308,6 @@
   }
   .h-40 {
     height: calc(var(--spacing) * 40);
-  }
-  .h-40\/100 {
-    height: calc(40/100 * 100%);
   }
   .h-50 {
     height: calc(var(--spacing) * 50);
@@ -392,9 +332,6 @@
   }
   .h-screen {
     height: 100vh;
-  }
-  .w-5 {
-    width: calc(var(--spacing) * 5);
   }
   .w-10 {
     width: calc(var(--spacing) * 10);
@@ -494,9 +431,6 @@
   }
   .gap-10 {
     gap: calc(var(--spacing) * 10);
-  }
-  .gap-30 {
-    gap: calc(var(--spacing) * 30);
   }
   .gap-\[25px\] {
     gap: 25px;
@@ -836,7 +770,7 @@
     font-size: 10vw;
   }
   .banner {
-    margin-left: -3em;
+    margin-left: 0;
     height: 18vh;
   }
   .banner h3 {
@@ -860,12 +794,12 @@
     width: 11em;
     height: 11em;
   }
+  .mobile-battery {
+    visibility: hidden;
+  }
   #freesection {
     padding-left: 15rem;
     padding-right: 15rem;
-  }
-  .mobile-battery {
-    visibility: hidden;
   }
 }
 p, li {

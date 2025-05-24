@@ -53,13 +53,13 @@ object-scale-down -> keeps original scale of image and just scales down based on
             </div>
             <div class="battery-container ml-[-1vw]">
                 <img src="./images/battery.png" alt="" class="absolute" id="battery">
-                <div class="w-10 h-30/100 bg-teal absolute left-29/100 top-55/100 rounded-sm" id="mobile-battery"></div>
+                <div class="invisible w-10 h-30/100 bg-teal absolute left-29/100 top-55/100 rounded-sm" id="mobile-battery"></div> <!-- not disappearing on laptop screen?? pernamnently hidden rn-->
                 <div class="hide w-27 h-12 bg-teal absolute left-16/100 top-57/100 rounded-sm" id="progress-bar"></div>
             </div>
             
         </div>
         <div class="big absolute bottom-0 right-0 flex flex-col items-baseline border-b-4 border-r-4">
-            <div class="flex flex-col mt-[6vh] annoying">
+            <div class="hide flex flex-col mt-[6vh] annoying">
                 <p class="text-right font-bold"  style="font-size: 2.5vw;">JULY 5-6</p>
                 <p class="text-right font-bold" style="font-size: 2.5vw;">2025</p>
             </div>
@@ -99,7 +99,7 @@ object-scale-down -> keeps original scale of image and just scales down based on
         <h2 class="text-center text-5xl text-blue pb-18 font-bold ">BUILD WHAT YOU LOVE!!</h2>
         <img id="rope" src="./images/rope.png" alt="rope" class="absolute left-0">
         <div class="h-auto flex flex-wrap justify-center items-center left-0">
-            <div class ="flex flex-wrap justify-between w-full bg-red-500 text-5xl text-blue text-center">
+            <div class ="flex flex-wrap justify-between w-full text-5xl text-blue text-center">
                 <div class="group flex flex-col gap-6 hover:scale-105 transition-all duration-200 ease-in-out">
                     <div id="pic" class ="group-hover:rotate-5 rounded-xs aspect-[7/10] w-60 bg-beige pt-5 px-5 pb-18 rotate-3 transition-all duration-200 ease-in-out">
                         <div class ="rounded-sm bg-blue w-full h-full"></div>   

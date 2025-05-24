@@ -64,7 +64,7 @@
   }
 
   .banner {
-    margin-left: -3em;
+    margin-left: 0;
     height: 18vh;
   }
 
@@ -98,13 +98,12 @@
   .mobile-battery {
     visibility: hidden;
   }
+
   #freesection{
     padding-left:15rem;
     padding-right:15rem;
   }
 
-
-  
 }
 
 
