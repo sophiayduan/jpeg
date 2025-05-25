@@ -14,6 +14,30 @@
    
 }
 
+p, li {
+  font-size:clamp(1rem, 2.5vw, 1.5rem);
+}
+h2 {
+  font-size:clamp(2rem, 3.5vw, 4rem);
+}
+
+/* landing page jpeg */
+h1{
+  font-size:clamp(18vw, 20vw, 14rem);
+}
+
+h3{
+  font-size:clamp(1.25rem,3vw,2rem)
+}
+/* everything is free */
+h4{
+  font-size:clamp(2.5rem,5vw,4rem)
+}
+#vert{
+  width:clamp(20rem, 64rem, 40%);
+  margin-bottom:2rem;
+  overflow:hidden;
+}
 
 @media(max-width:700px){
   #overlay{
@@ -63,18 +87,7 @@
     font-size: 10vw;
   }
 
-  .banner {
-    margin-left: 0;
-    height: 18vh;
-  }
 
-  .banner h3 {
-    font-size: 4vw;
-  }
-
-  .banner h2 {
-    font-size: 80vw;
-  }
 
   .mobile-battery {
     visibility: visible;
@@ -107,21 +120,7 @@
 }
 
 
-p, li {
-  font-size:clamp(1rem, 2.5vw, 1.5rem);
-}
-h2 {
-  font-size:clamp(2rem, 3.5vw, 4rem);
-}
-h1{
-  font-size:clamp(18vw, 20vw, 14rem);
-}
-
-#vert{
-  width:clamp(20rem, 64rem, 40%);
-  margin-bottom:2rem;
-  overflow:hidden;
-}
+/* adding custom fonts */
 
 @layer base {
   @font-face {
