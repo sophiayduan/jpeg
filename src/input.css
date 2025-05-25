@@ -23,7 +23,7 @@ h2 {
 
 /* landing page jpeg */
 h1{
-  font-size:clamp(18vw, 20vw, 14rem);
+  font-size:clamp(14vw, 24vw, 16rem);
 }
 
 h3{
