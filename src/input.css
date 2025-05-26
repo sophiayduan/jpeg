@@ -49,6 +49,11 @@ h4{
     
   }
   
+  #hc{
+    width:10em;
+    margin-top:-0.5em;
+    margin-left:2em;
+  }
   .big{
     width:4em;
     height:4em;
