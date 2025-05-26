@@ -27,7 +27,8 @@ h1{
 }
 
 h3{
-  font-size:clamp(1.25rem,3vw,2rem)
+  font-size:clamp(1.25rem,3vw,2rem);
+  font-weight:600;
 }
 /* everything is free */
 h4{
@@ -37,6 +38,7 @@ h4{
   width:clamp(20rem, 64rem, 40%);
   margin-bottom:2rem;
   overflow:hidden;
+  height:auto;
 }
 
 @media(max-width:700px){
