@@ -83,12 +83,16 @@ object-scale-down -> keeps original scale of image and just scales down based on
         </div>
     </section>
     <section>
-        <div class="sides relative h-auto w-screen bg-blue py-10">
-            <div class=" flex flex-wrap items-center p-10 rounded-2xl w-full gap-10 h-full bg-white justify-center">
-                <img src="/images/irl/IMG_0608.jpg" class="bg-gray-500 rounded-2xl w-80 ">
-                <p class="leading-[1.5] text-2xl flex-1 text-blue">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque 
+        <div class="sides relative h-[65vh] w-screen bg-blue py-10">
+            <div class=" flex flex-wrap items-center p-10 rounded-2xl w-full gap-10 h-full bg-white justify-center items-start">
+                <img src="/images/irl/IMG_0608.jpg" class="bg-gray-500 rounded-2xl w-80 object-scale-down">
+                <p class="leading-[1.5] text-1xl flex-1 text-blue">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque 
                     vel risus lobortis elit iaculis aliquet quis eu magna. Mauris 
                     porttitor odio odio, vitae maximus turpis tincidunt tincidunt. </p>
+            </div>
+            <div class="absolute flex flex-row justify-between w-1/1 left-0" style="overflow-x: clip;">
+                <img src="./images/shark.png" alt="ikea shark" class="w-[60%] object-scale-down -mt-[50%]" style="margin-left: -8vw; ">
+                <img src="./images/bear.png" alt="ikea bear" class="w-[60%] object-scale-down -mt-[44%]" style="margin-right: -9vw; ">
             </div>
         </div>
         <!-- <div class="relative w-60 h-80 bg-blue"></div> -->
@@ -99,7 +103,7 @@ object-scale-down -> keeps original scale of image and just scales down based on
         <img id="rope" src="./images/rope.png" alt="rope" class="absolute left-0">
         <div class="h-auto flex flex-wrap justify-center items-center left-0">
 
-            <div class ="flex flex-wrap justify-center gap-20 w-full text-5xl text-blue text-center">
+            <div class ="wrap flex flex-row justify-center gap-20 w-full text-5xl text-blue text-center">
                 <div class="group flex flex-col gap-6 hover:scale-105 transition-all duration-200 ease-in-out">
                     <div id="pic" class ="group-hover:rotate-5 rounded-xs aspect-[7/10] w-60 bg-beige pt-5 px-5 pb-18 rotate-3 transition-all duration-200 ease-in-out">
                         <div class ="rounded-sm bg-blue w-full h-full"></div>   
@@ -124,9 +128,9 @@ object-scale-down -> keeps original scale of image and just scales down based on
     </section>
 
     <section class="bg-blue  sides h-fit py-14">
-        <h2 class="text-5xl text-beige font-bold pb-10" style="background:linear-gradient(to right,#f0e9e1,#fbde9c);background-clip:text;color:transparent">JOIN US FOR<span class="ml-6 text-4xl " style="font-family: Playwrite US Trad">the vibes</span></h2>
+        <h2 class="wrap flex flex-row text-5xl text-beige font-bold pb-10" style="background:linear-gradient(to right,#f0e9e1,#fbde9c);background-clip:text;color:transparent">JOIN US FOR<span class="ml-6 text-4xl " style="font-family: Playwrite US Trad">the vibes</span></h2>
             <section id="panels" class="flex flex-col gap-10">
-                <div class="h-fit w-full bg-beige flex flex-wrap gap-[25px] p-0 m-0 bg-black" 
+                <div class="wrap h-fit w-full bg-beige flex flex-row gap-[25px] p-0 m-0 bg-black" 
                 style="border: 30px solid transparent; 
                 border-image-slice: 33% 33% 33% 33%;
                 border-image-width: 1.75em 1.75em 1.75em 1.75em;
@@ -140,16 +144,16 @@ object-scale-down -> keeps original scale of image and just scales down based on
                             <p>Want to host a workshop? Mention that in the sign up form!</p>
                         </div>
                     </div>
-                        <img src="images/irl/IMG_0562.jpg" class="h-60 w-auto">
+                        <img src="images/irl/IMG_0562.jpg" class="h-60 w-auto object-scale-down">
                 </div>
-                <div class="h-fit w-full bg-beige flex flex-wrap gap-[25px] p-0 m-0 bg-black" 
+                <div class="wrap h-fit w-full bg-beige flex flex-row gap-[25px] p-0 m-0 bg-black" 
                 style="border: 30px solid transparent; 
                 border-image-slice: 33% 33% 33% 33%;
                 border-image-width: 1.75em 1.75em 1.75em 1.75em;
                 border-image-outset: 0px 0px 0px 0px;
                 border-image-repeat: round;
                 border-image-source: url(images/h-border.png)">
-                    <img src="images/irl/IMG_0699.jpg" class="h-60 w-auto">
+                    <img src="images/irl/IMG_0699.jpg" class="h-60 w-auto object-scale-down">
 
                     <div class="w-[50%] h-auto bg-beige flex justify-center items-center px-10 grow-1">
                         <div class="flex flex-col gap-2 text-center justify-center items-center ">
@@ -172,7 +176,7 @@ object-scale-down -> keeps original scale of image and just scales down based on
 
         <div class="flex flex-wrap gap-8 items-center pb-10" >
             <div class="group flex flex-col gap-6 hover:scale-105 transition-all duration-200 ease-in-out">
-                <div id="pic" class ="group-hover:rotate-355 rounded-xs aspect-[7/10] bg-yellow w-80 pt-5 px-5 pb-18 rotate-357 transition-all duration-200 ease-in-out">
+                <div id="pic" class ="shrink group-hover:rotate-355 rounded-xs aspect-[7/10] bg-yellow w-80 pt-5 px-5 pb-18 rotate-357 transition-all duration-200 ease-in-out">
                     <div class ="rounded-sm bg-beige w-full h-full p-6">
                         <h3 class="text-black font-bold">TIME</h3>
                         <p class="text-lg">JULY 5 2:00PM - JULY 6 3:00PM</p>

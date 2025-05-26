@@ -94,7 +94,13 @@ h4{
     font-size: 10vw;
   }
 
+  .wrap {
+    flex-wrap: wrap;
+  }
 
+  .shrink {
+    width: 75vw;
+  }
 
   .mobile-battery {
     visibility: visible;
