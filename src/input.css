@@ -14,6 +14,19 @@
    
 }
 
+@keyframes appear {
+  100% {
+    opacity: 100%;
+  }
+}
+
+#h-nav {
+    animation: appear 10s ease-in-out;
+    animation-timeline: scroll(block root);
+    animation-range: 40vh 60vh;
+    animation-fill-mode: forwards;
+}
+
 p, li {
   font-size:clamp(1rem, 2.25vw, 1.25rem);
 }
@@ -34,7 +47,8 @@ h3{
 h4{
   font-size:clamp(2.5rem,5vw,4rem)
 }
-#vert{
+
+.vert{
   width:clamp(24rem, 68rem, 48%);
   margin-bottom:2rem;
   overflow:hidden;

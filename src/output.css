@@ -197,6 +197,9 @@
   .absolute {
     position: absolute;
   }
+  .fixed {
+    position: fixed;
+  }
   .relative {
     position: relative;
   }
@@ -209,9 +212,6 @@
   .top-55\/100 {
     top: calc(55/100 * 100%);
   }
-  .top-57\/100 {
-    top: calc(57/100 * 100%);
-  }
   .right-0 {
     right: calc(var(--spacing) * 0);
   }
@@ -220,9 +220,6 @@
   }
   .left-0 {
     left: calc(var(--spacing) * 0);
-  }
-  .left-16\/100 {
-    left: calc(16/100 * 100%);
   }
   .left-29\/100 {
     left: calc(29/100 * 100%);
@@ -274,9 +271,6 @@
     width: calc(var(--spacing) * 10);
     height: calc(var(--spacing) * 10);
   }
-  .h-12 {
-    height: calc(var(--spacing) * 12);
-  }
   .h-16 {
     height: calc(var(--spacing) * 16);
   }
@@ -292,6 +286,9 @@
   .h-110 {
     height: calc(var(--spacing) * 110);
   }
+  .h-\[5vh\] {
+    height: 5vh;
+  }
   .h-auto {
     height: auto;
   }
@@ -304,14 +301,14 @@
   .h-screen {
     height: 100vh;
   }
+  .w-0 {
+    width: calc(var(--spacing) * 0);
+  }
   .w-1\/1 {
     width: calc(1/1 * 100%);
   }
   .w-10 {
     width: calc(var(--spacing) * 10);
-  }
-  .w-27 {
-    width: calc(var(--spacing) * 27);
   }
   .w-58 {
     width: calc(var(--spacing) * 58);
@@ -390,6 +387,9 @@
   }
   .justify-center {
     justify-content: center;
+  }
+  .justify-evenly {
+    justify-content: space-evenly;
   }
   .justify-start {
     justify-content: flex-start;
@@ -520,6 +520,9 @@
   .py-3 {
     padding-block: calc(var(--spacing) * 3);
   }
+  .py-5 {
+    padding-block: calc(var(--spacing) * 5);
+  }
   .py-8 {
     padding-block: calc(var(--spacing) * 8);
   }
@@ -613,6 +616,9 @@
   }
   .text-teal {
     color: var(--color-teal);
+  }
+  .text-white {
+    color: var(--color-white);
   }
   .text-yellow {
     color: var(--color-yellow);
@@ -738,6 +744,17 @@
   }
 }
 @import url("https://fonts.googleapis.com/css2?family=Playwrite+US+Trad:wght@100..400&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@keyframes appear {
+  100% {
+    opacity: 100%;
+  }
+}
+#h-nav {
+  animation: appear 10s ease-in-out;
+  animation-timeline: scroll(block root);
+  animation-range: 40vh 60vh;
+  animation-fill-mode: forwards;
+}
 p, li {
   font-size: clamp(1rem, 2.25vw, 1.25rem);
 }
@@ -754,7 +771,7 @@ h3 {
 h4 {
   font-size: clamp(2.5rem,5vw,4rem);
 }
-#vert {
+.vert {
   width: clamp(24rem, 68rem, 48%);
   margin-bottom: 2rem;
   overflow: hidden;
