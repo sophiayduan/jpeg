@@ -60,8 +60,9 @@ object-scale-down -> keeps original scale of image and just scales down based on
                 <p class="text-xl flex items-center">ON</p> -->
             </div>
             <div class="battery-container ml-[-1vw]">
-                <img src="./images/battery.png" alt="" class="absolute" id="battery">
+                <!-- <img src="./images/battery.png" alt="" class="absolute" id="battery">
                 <div class="invisible w-10 h-30/100 bg-teal absolute left-29/100 top-55/100 rounded-sm" id="mobile-battery"></div> 
+                <div class="hide w-27 h-12 bg-teal absolute left-16/100 top-57/100 rounded-sm" id="progress-bar"></div> -->
             </div>
             
         </div>
@@ -69,7 +70,6 @@ object-scale-down -> keeps original scale of image and just scales down based on
             <div class="hide flex flex-col mt-[6vh] annoying">
                 <!-- <p class="text-right font-bold"  style="font-size: 2.5vw;">JULY 5-6</p>
                 <p class="text-right font-bold" style="font-size: 2.5vw;">2025</p> -->
-                <p>Ottawa</p>
             </div>
         </div>
     </div>
@@ -94,13 +94,12 @@ object-scale-down -> keeps original scale of image and just scales down based on
         <div class="sides relative h-auto w-screen bg-blue py-10">
             <div class=" flex flex-wrap items-center p-10 rounded-2xl w-full gap-10 h-full bg-white justify-center items-start">
                 <img src="images/irl/IMG_0608.jpg" class="bg-gray-500 rounded-2xl w-80 object-scale-down">
-                <p class="leading-[1.5] text-1xl flex-1 text-blue">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque 
-                    vel risus lobortis elit iaculis aliquet quis eu magna. Mauris 
-                    porttitor odio odio, vitae maximus turpis tincidunt tincidunt. 
-                
-                    <span class="font-bold text-teal"><br><br> You'll have 25 hours to make a game from a picture...</span>   Are you ready? 
-                
-                
+                <p class="leading-[1.5] text-1xl flex-1 text-blue">Welcome to JPEG! July 5-6th, join us for an overnight gender-focused 
+                    game jam with 70+ teens at Carleton University.
+
+                    <span class="font-bold text-teal"><br><br> You'll have 25 hours to make a game from a picture...</span>
+                    <br>
+                    Are you ready? 
                 </p>
             </div>
             <!-- <div class="absolute flex flex-row justify-between w-1/1 left-0" style="overflow-x: clip;">
@@ -127,39 +126,36 @@ object-scale-down -> keeps original scale of image and just scales down based on
     </section>
 
     <section id = "about" class="sides pt-4 pb-24 bg-teal h-auto"> 
-        <h2 class="text-center text-5xl text-white pb-18 font-bold ">BUILD WHAT YOU LOVE!!</h2>
+       
         <img id="rope" src="./images/rope.png" alt="rope" class="absolute left-0">
-        <div class="h-auto flex flex-wrap justify-center items-center">
-
-            <div class ="flex flex-wrap justify-between w-full text-5xl text-black text-center">
-                <div class="group flex flex-col gap-6 hover:scale-105 transition-all duration-200 ease-in-out">
-                    <div id="pic" class ="shadow-md group-hover:rotate-5 rounded-xs aspect-[7/10] w-58 bg-blue pt-5 px-5 pb-18 rotate-3 transition-all duration-200 ease-in-out">
-                        <div class ="rounded-sm bg-beige w-full h-full"></div>   
-                    </div>
-                    <div class="pt-5 group-hover:font-bold transition ease-in-out duration-600">
-                        <h2>SIGN UP</h2>
-                        <p>lorem ipsum i am sleepy</p>
-                    </div>                
+        <div class="h-auto flex flex-wrap justify-center gap-16 items-center w-full text-center">
+            <div class="  group w-70 flex flex-col items-center gap-6 hover:scale-105 transition-all duration-200 ease-in-out">
+                <div id="pic" class ="shadow-md group-hover:rotate-5 rounded-xs aspect-[7/10] w-58 bg-blue pt-5 px-5 pb-18 rotate-3 transition-all duration-200 ease-in-out">
+                    <div class ="rounded-sm bg-beige w-full h-full"></div>   
                 </div>
-                <div class="group flex flex-col gap-6 hover:scale-105 transition-all duration-200 ease-in-out">
-                    <div id="pic" class ="shadow-md group-hover:rotate-355 rounded-xs aspect-[7/10] w-58 bg-blue pt-5 px-5 pb-18 rotate-357 transition-all duration-200 ease-in-out">
-                        <div class ="rounded-sm bg-beige w-full h-full"></div>   
-                    </div>
-                    <div class="pt-5 group-hover:font-bold transition ease-in-out duration-400">
-                        <h2>BUILD</h2>
-                        <p>lorem ipsum i am sleepy</p>
-                    </div>
+                <div class="pt-5 group-hover:font-bold transition ease-in-out duration-600">
+                    <h2>SIGN UP</h2>
+                    <p> <a href="https://jpeg.fillout.com/register" class="underline">Sign up now!</a></p>
+                </div>                
+            </div>
+            <div class="  group w-70  flex items-center flex-col gap-6 hover:scale-105 transition-all duration-200 ease-in-out">
+                <div id="pic" class ="shadow-md group-hover:rotate-355 rounded-xs aspect-[7/10] w-58 bg-blue pt-5 px-5 pb-18 rotate-357 transition-all duration-200 ease-in-out">
+                    <div class ="rounded-sm bg-beige w-full h-full"></div>   
                 </div>
-                <div class="group flex flex-col gap-6 hover:scale-105 transition-all duration-200 ease-in-out">
-                    <div id="pic" class ="shadow-md group-hover:rotate-5 rounded-xs aspect-[7/10] w-58 bg-blue pt-5 px-5 pb-18 rotate-3 transition-all duration-200 ease-in-out">
-                        <div class ="rounded-sm bg-beige w-full h-full"></div>   
-                    </div>
-                    <div class="pt-5 group-hover:font-bold transition ease-in-out duration-400">
-                        <h2>SHOWCASE</h2>
-                        <p>lorem ipsum i am sleepy</p>
-                    </div>                
+                <div class="pt-5 group-hover:font-bold transition ease-in-out duration-400">
+                    <h2>BUILD</h2>
+                    <p>Create your game in 25h</p>
                 </div>
             </div>
+            <div class="  group w-70  flex flex-col items-center gap-6 hover:scale-105 transition-all duration-200 ease-in-out">
+                <div id="pic" class ="shadow-md group-hover:rotate-5 rounded-xs aspect-[7/10] w-58 bg-blue pt-5 px-5 pb-18 rotate-3 transition-all duration-200 ease-in-out">
+                    <div class ="rounded-sm bg-beige w-full h-full"></div>   
+                </div>
+                <div class="pt-5 group-hover:font-bold transition ease-in-out duration-400">
+                    <h2>SHOWCASE</h2>
+                    <p>Demo your game</p>
+                </div>                
+            </div> 
         </div>
     
     </section>
@@ -195,7 +191,7 @@ object-scale-down -> keeps original scale of image and just scales down based on
                     <div class="w-[50%] h-auto bg-beige flex justify-center items-center px-10 grow-1">
                         <div class="flex flex-col gap-2 text-center justify-center items-center ">
                             <h3 class="pb-1 font-bold">AWESOME TIME</h3>
-                            <p>free food, fun games, secret prizes, new friend. Welcome to people of ALL skill levels!</p>
+                            <p>Free food, fun games, secret prizes, new friends. Welcome to people of ALL skill levels!</p>
                         </div>
                     </div>
                 </div>
@@ -216,7 +212,7 @@ object-scale-down -> keeps original scale of image and just scales down based on
                 <div id="pic" class ="shrink group-hover:rotate-357 rounded-xs aspect-[7/10] bg-blue h-110 shadow-md pt-5 px-5 pb-18 rotate-358 transition-all duration-200 ease-in-out">
                     <div class ="rounded-sm bg-white w-full h-full p-6">
                         <h3 class="text-black font-bold">TIME</h3>
-                        <p class="text-lg">JULY 5 2:00PM - JULY 6 3:00PM</p>
+                        <p class="text-lg">JULY 5 2:00PM - <br> JULY 6 3:00PM</p>
                         <h3 class="text-black font-bold">LOCATION</h3>
                         <p>Carleton University</p><br>
                         <p>1125 Colonel By Dr, Ottawa, ON K1S 5B6</p>
@@ -231,7 +227,7 @@ object-scale-down -> keeps original scale of image and just scales down based on
             <p class="text-yellow py-1 text-left font-playwrite">Is everything free?</p>
             <h4 class="text-beige text-4xl font-bold py-3">
                 EVERYTHING IS FREE!!</h4>
-            <p class="text-beige py-1 text-right">food, drinks, t-shirt, swag, & vibes! Just show up! </p>
+            <p class="text-beige py-1 text-right">Food, drinks, t-shirt, swag, & vibes! Just show up! </p>
         </div> 
         
     <section class="sides bg-blue">
@@ -286,7 +282,7 @@ object-scale-down -> keeps original scale of image and just scales down based on
                         <img src="./images/irl/IMG_0606.jpg" class="border-3 border-black">
                         <div class="flex h-fit flex-wrap gap-2 p-6 bg-beige">
                             <h3>My parent's are worried!</h3>
-                            <p>We’re here to help! Send them our parent guide. More questions? They can reach out to us at (some email) and we’ll make sure to answer questions</p>
+                            <p>We’re here to help! Send them our <a href="https://tinyurl.com/5ykhrduh" class="underline">Parent Guide</a>. More questions? They can reach out to us at renran@hackclub.com</p>
                         </div>
                         <div class="grow-1 h-auto w-full bg-beige -mt-[25px]"></div> 
 
