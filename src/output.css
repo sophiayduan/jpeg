@@ -18,6 +18,8 @@
     --text-xl--line-height: calc(1.75 / 1.25);
     --text-2xl: 1.5rem;
     --text-2xl--line-height: calc(2 / 1.5);
+    --text-3xl: 1.875rem;
+    --text-3xl--line-height: calc(2.25 / 1.875);
     --text-4xl: 2.25rem;
     --text-4xl--line-height: calc(2.5 / 2.25);
     --text-5xl: 3rem;
@@ -252,6 +254,9 @@
   .m-0 {
     margin: calc(var(--spacing) * 0);
   }
+  .my-5 {
+    margin-block: calc(var(--spacing) * 5);
+  }
   .-mt-5 {
     margin-top: calc(var(--spacing) * -5);
   }
@@ -269,9 +274,6 @@
   }
   .mt-\[6vh\] {
     margin-top: 6vh;
-  }
-  .mb-\[-2vh\] {
-    margin-bottom: -2vh;
   }
   .ml-6 {
     margin-left: calc(var(--spacing) * 6);
@@ -296,6 +298,9 @@
     width: calc(var(--spacing) * 10);
     height: calc(var(--spacing) * 10);
   }
+  .h-3 {
+    height: calc(var(--spacing) * 3);
+  }
   .h-12 {
     height: calc(var(--spacing) * 12);
   }
@@ -316,6 +321,9 @@
   }
   .h-110 {
     height: calc(var(--spacing) * 110);
+  }
+  .h-\[2vh\] {
+    height: 2vh;
   }
   .h-\[5vh\] {
     height: 5vh;
@@ -341,11 +349,23 @@
   .w-1\/1 {
     width: calc(1/1 * 100%);
   }
+  .w-2 {
+    width: calc(var(--spacing) * 2);
+  }
+  .w-2\/3 {
+    width: calc(2/3 * 100%);
+  }
   .w-10 {
     width: calc(var(--spacing) * 10);
   }
   .w-27 {
     width: calc(var(--spacing) * 27);
+  }
+  .w-55 {
+    width: calc(var(--spacing) * 55);
+  }
+  .w-55\/100 {
+    width: calc(55/100 * 100%);
   }
   .w-58 {
     width: calc(var(--spacing) * 58);
@@ -645,6 +665,10 @@
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
   }
+  .text-3xl {
+    font-size: var(--text-3xl);
+    line-height: var(--tw-leading, var(--text-3xl--line-height));
+  }
   .text-4xl {
     font-size: var(--text-4xl);
     line-height: var(--tw-leading, var(--text-4xl--line-height));
@@ -834,7 +858,7 @@
 #h-nav {
   animation: appear 10s ease-in-out;
   animation-timeline: scroll(block root);
-  animation-range: 40vh 60vh;
+  animation-range: 40vh 70vh;
   animation-fill-mode: forwards;
 }
 p, li {
@@ -910,6 +934,9 @@ h4 {
     visibility: visible;
     width: 100px;
     height: 40px;
+  }
+  .full-width {
+    width: 100%;
   }
 }
 @media (min-width:700px) {

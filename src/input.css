@@ -24,7 +24,7 @@
 #h-nav {
     animation: appear 10s ease-in-out;
     animation-timeline: scroll(block root);
-    animation-range: 40vh 60vh;
+    animation-range: 40vh 70vh;
     animation-fill-mode: forwards;
 }
 
@@ -73,6 +73,7 @@ h4{
     width:4em;
     height:4em;
   }
+
   .sides{
     padding-left:10%;
     padding-right:10%;
@@ -123,6 +124,9 @@ h4{
     height: 40px;
   }
 
+  .full-width {
+    width: 100%;
+  }
  
 }
 @media(min-width:700px){
