@@ -25,6 +25,10 @@ object-scale-down -> keeps original scale of image and just scales down based on
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="output.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
     <!--<script src="https://cdn.tailwindcss.com"></script>-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -153,21 +157,24 @@ object-scale-down -> keeps original scale of image and just scales down based on
     </section>
 
     <section class="sides relative h-auto w-screen bg-blue py-10">
-        <div class="flex flex-col items-center p-10 rounded-2xl w-full gap-10 h-full bg-white justify-center">
-            <div class="flex flex-wrap gap-10 items-center justify-center">
-                <img src="images/irl/IMG_0608.jpg" class="rounded-2xl w-100 object-scale-down">
-                <div class="flex flex-col w-[50%]">
-                    <p class="leading-[1.5] text-1xl flex-1 text-blue">Wanna get flown out to New York City?? Sign up for the <a href="https://athena.hackclub.com/" style="font-weight: bold;">Athena Award</a></p>
-                    <ol class="text-blue">
-                        <li>1. Earn Hack Club's Athena Award, an industry recognized technical certificate.</li>
-                        <li>2. Code 30hrs, 3 projects, and travel to New York City!</li>
+        <div class="flex flex-col items-center p-4 rounded-2xl w-full gap-x-10 gap-y-2 h-full bg-white justify-center">
+            <div class="flex flex-wrap items-center p-8 rounded-2xl w-full gap-x-10 gap-y- h-full bg-white justify-center items-start">
+                <img src="images/irl/IMG_0564.jpg" class="rounded-2xl h-60 object-scale-down">
+                <div class="flex flex-col w-50 grow-1 items-center justify-center leading-[1.5]">
+                    <p class="text-1xl grow-1 text-blue">
+                        Wanna get flown out to <b>New York City?</b> Sign up for the 
+                        <a href="https://athena.hackclub.com/" style="font-weight: bold;">Athena Award</a></p><br>
+                    <ol class="text-blue mt-2">
+                        <br>
+                        <li>1. Earn Hack Club's <b>Athena Award</b>, an industry recognized technical certificate.</li>
+                        <li>2. Code <b>30hrs</b>, 3 projects, and travel to New York City!</li>
                         <li>3. Win prizes as you code, including laptops, iPads and hoodies.</li>
                     </ol>
                 </div> 
             </div>
-
             <div  class="flex flex-col gap-2 w-full items-center">
-                <p class="font-bold text-teal w-2/3 text-3xl full-width">JPEG is an Athena Event, so you can earn artifacts by coding at JPEG!</p>  
+                <p class="font-bold text-teal w-2/3 text-3xl text-center full-width">
+                    JPEG is an Athena Event, so you can earn artifacts by coding at JPEG!</p>  
                     <a href="https://athena.hackclub.com/" target="_blank"
                     class="flex items-center justify-center transition-all duration-600 ease-in-out rounded-lg hover:underline 
                     text-2xl hover:scale-200 hover:shadow-xl text-beige bg-pink h-16 w-60 font-bold hover:text-beige">
@@ -192,7 +199,7 @@ object-scale-down -> keeps original scale of image and just scales down based on
                 </div>
                 <img src="./images/irl/IMG_0562.jpg" class="object-scale-down w-auto">
             </div> -->
-            <div class="flex flex-wrap h-full w-full bg-beige gap-[25px] p-0 m-0 bg-black border" 
+            <div class="flex flex-wrap h-full w-full text-center bg-beige gap-[25px] p-0 m-0 bg-black border" 
             style="border-image-source: url(./images/h-border.png)">
                 <div class=" w-50 grow-1 py-6 bg-beige flex flex-col justify-center items-center px-10 grow">
                         <h3 class="pb-1 font-bold">WORKSHOPS</h3>
