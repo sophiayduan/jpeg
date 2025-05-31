@@ -36,7 +36,7 @@ object-scale-down -> keeps original scale of image and just scales down based on
         <div style="max-width: 100%;" class="flex items-center w-0 bg-teal rounded-sm h-[2vh] py-2" id="progress-bar"></div>
         <div class="text-4xl text-bold flex justify-evenly pointer-events-auto py-[2vh] bg-white"> 
                 <a href = "#about" class="">ABOUT</a>
-                <a href = "#faq" class=" ">FAQ</a>
+                <a href = "#faq" class="">FAQ</a>
                 <a href = "#landing" class="">SIGNUP</a>
         </div>
     </div>
@@ -56,8 +56,6 @@ object-scale-down -> keeps original scale of image and just scales down based on
         </div>
         <div class="big absolute bottom-0 border-b-4 border-l-4 p-6 flex flex-col gap-2">
             <div class="flex hide justify-center gap-2 ml-[-1vw]">
-                <!-- <img src="/images/camera.png" alt="" class="size-10">
-                <p class="text-xl flex items-center">ON</p> -->
             </div>
             <div class="battery-container ml-[-1vw]">
                 <!-- <img src="./images/battery.png" alt="" class="absolute" id="battery">
@@ -77,61 +75,55 @@ object-scale-down -> keeps original scale of image and just scales down based on
 
     <section id="landing" class="h-screen flex justify-center items-center bg-beige">
         <div class="flex flex-col gap-2 justify-center items-center">
-             <!-- <img src="/images/jpeg.png" target="blank" loading="lazy" class="h-50"> -->
             <h1 class="text-blue font-Bernoru">.jpeg</h1>
-            <!-- <h3 class="text-blue pb-2 font-playwrite -mt-5" >One photo. One team. 25h to build a game.</h3>             -->
             <h3 class="text-black pb-2 font-playwrite -mt-5 text-center" >"A photo is worth a thousand lines of code"</h3>            
 
             <a href="https://jpeg.fillout.com/register" target="_blank"
                 class="flex items-center justify-center transition-all duration-600 ease-in-out rounded-lg hover:underline 
-                text-2xl hover:scale-300 hover:shadow-xl text-beige bg-teal h-16 w-60 font-bold hover:text-yellow">
+                text-2xl hover:scale-150 hover:shadow-xl text-beige bg-teal h-16 w-60 font-bold hover:text-yellow">
                 SIGN UP NOW!
              </a>
                
         </div>
     </section>
-    <section>
-        <div class="sides relative h-auto w-screen bg-blue py-10">
-            <div class=" flex flex-wrap items-center p-10 rounded-2xl w-full gap-10 h-full bg-white justify-center items-start">
-                <img src="images/irl/IMG_0608.jpg" class="bg-gray-500 rounded-2xl w-80 object-scale-down">
-                <p class="leading-[1.5] text-1xl flex-1 text-blue">Welcome to JPEG! July 5-6th, join us for an overnight gender-focused 
-                    game jam with 70+ teens at Carleton University.
+    <section class="sides relative h-auto w-screen bg-blue py-10">
+        <div class="flex flex-wrap items-center p-10 rounded-2xl w-full gap-10 h-full bg-white justify-center items-start">
+            <img src="images/irl/IMG_0608.jpg" class="rounded-2xl w-60 object-scale-down">
+            <p class="leading-[1.5] text-xl flex-1 text-blue min-w-60">Welcome to JPEG! July 5-6th, join us for an overnight gender-focused 
+                game jam with 70+ teens at Carleton University.
 
-                    <span class="font-bold text-teal"><br><br> You'll have 25 hours to make a game from a picture...</span>
-                    <br>
-                    Are you ready? 
-                </p>
+                <span class="font-bold text-teal"><br><br> You'll have 25 hours to make a game from a picture...</span>
+                <br>
+                Are you ready? 
+            </p>
+        </div>
+        <!-- <div class="absolute flex flex-row justify-between w-1/1 left-0" style="overflow-x: clip;">
+            <img src="images/shark.png" alt="ikea shark" class="w-[40%] object-scale-down -mt-[50%]" style="margin-left: -8vw; ">
+            <img src="images/bear.png" alt="ikea bear" class="w-[40%] object-scale-down -mt-[44%]" style="margin-right: -9vw; ">
+        </div> -->
+       </section>
+    <section class="sides relative h-auto w-screen bg-beige pt-6">
+        <div class=" flex flex-wrap items-center p-10 rounded-2xl w-full gap-10 h-full bg-beige justify-center">
+            <!--<p class="leading-[1.5] text-2xl flex-1 text-black"> Welcome to JPEG! July 5-6th, join us for an overnight <span class="font-playwrite">gender-focused</span> game jam 
+                with 70+ teens at <span class="underline">Carleton University.</span><span class="font-bold text-beige"><br><br> You'll have 25 hours to make a game from a picture...</span>   Are you ready? </p>-->
+                        <!-- <img src="/images/bear.png" class="bg-teal rounded-xl w-80 "> -->
+
             </div>
-            <!-- <div class="absolute flex flex-row justify-between w-1/1 left-0" style="overflow-x: clip;">
-                <img src="images/shark.png" alt="ikea shark" class="w-[40%] object-scale-down -mt-[50%]" style="margin-left: -8vw; ">
-                <img src="images/bear.png" alt="ikea bear" class="w-[40%] object-scale-down -mt-[44%]" style="margin-right: -9vw; ">
-            </div> -->
-        </div>
-        <!-- <div class="relative w-60 h-80 bg-blue"></div> -->
-    </section>
-    <section>
-        <div class="sides relative h-auto w-screen bg-beige pt-6">
-            <div class=" flex flex-wrap items-center p-10 rounded-2xl w-full gap-10 h-full bg-beige justify-center">
-                <!--<p class="leading-[1.5] text-2xl flex-1 text-black"> Welcome to JPEG! July 5-6th, join us for an overnight <span class="font-playwrite">gender-focused</span> game jam 
-                    with 70+ teens at <span class="underline">Carleton University.</span><span class="font-bold text-beige"><br><br> You'll have 25 hours to make a game from a picture...</span>   Are you ready? </p>-->
-                            <!-- <img src="/images/bear.png" class="bg-teal rounded-xl w-80 "> -->
-
-                </div>
-            <!-- <div class="absolute flex flex-row justify-between w-1/1 left-0" style="overflow-x: clip;">
-                <img src="./images/shark.png" alt="ikea shark" class="w-[60%] object-scale-down -mt-[50%]" style="margin-left: -8vw; ">
-                <img src="./images/bear.png" alt="ikea bear" class="w-[60%] object-scale-down -mt-[44%]" style="margin-right: -9vw; ">
-            </div> -->
-        </div>
-        <!-- <div class="relative w-60 h-80 bg-blue"></div> -->
+        <!-- <div class="absolute flex flex-row justify-between w-1/1 left-0" style="overflow-x: clip;">
+            <img src="./images/shark.png" alt="ikea shark" class="w-[60%] object-scale-down -mt-[50%]" style="margin-left: -8vw; ">
+            <img src="./images/bear.png" alt="ikea bear" class="w-[60%] object-scale-down -mt-[44%]" style="margin-right: -9vw; ">
+        </div> -->
+    <!-- <div class="relative w-60 h-80 bg-blue"></div> -->
     </section>
 
     <section id = "about" class=" pt-4 pb-24 bg-beige h-auto"> 
        
         <img id="rope" src="./images/rope.png" alt="rope" class="absolute left-0">
         <div class="h-auto flex flex-wrap justify-center gap-16 items-center w-full text-center">
-            <div class="  group w-70 flex flex-col items-center gap-6 hover:scale-105 transition-all duration-200 ease-in-out">
-                <div id="pic" class ="shadow-md group-hover:rotate-5 rounded-xs aspect-[7/10] w-58 bg-teal pt-5 px-5 pb-18 rotate-3 transition-all duration-200 ease-in-out">
-                    <div class ="rounded-sm bg-beige w-full h-full"></div>   
+            <div class="group w-70 flex flex-col items-center gap-6 hover:scale-105 transition-all duration-200 ease-in-out">
+                <div id="pic" class ="shadow-md group-hover:rotate-5 rounded-xs aspect-[7/10] w-58 bg-blue pt-5 px-5 pb-18 rotate-3 transition-all duration-200 ease-in-out">
+                    <!-- <div class ="rounded-sm bg-beige w-full h-full"></div>    -->
+                     <img src="./images/irl/IMG_0564.jpg" alt="image" class ="rounded-sm bg-beige ">
                 </div>
                 <div class="pt-5 group-hover:font-bold transition ease-in-out duration-600">
                     <h2>SIGN UP</h2>
@@ -183,67 +175,52 @@ object-scale-down -> keeps original scale of image and just scales down based on
                 class="flex items-center justify-center transition-all duration-600 ease-in-out rounded-lg hover:underline 
                 text-2xl hover:scale-200 hover:shadow-xl text-beige bg-pink h-16 w-60 font-bold hover:text-beige">
                 START
-             </a>
-                </div>
-                
-            
-            </div>
-            <!-- <div class="absolute flex flex-row justify-between w-1/1 left-0" style="overflow-x: clip;">
-                <img src="images/shark.png" alt="ikea shark" class="w-[40%] object-scale-down -mt-[50%]" style="margin-left: -8vw; ">
-                <img src="images/bear.png" alt="ikea bear" class="w-[40%] object-scale-down -mt-[44%]" style="margin-right: -9vw; ">
-            </div> -->
+            </a>
         </div>
-        <!-- <div class="relative w-60 h-80 bg-blue"></div> -->
     </section>
 
 
     <section class="bg-teal  sides h-fit py-14">
-        <h2 class="wrap flex flex-row text-5xl text-beige font-bold pb-10" style="background:linear-gradient(to right,#f0e9e1,#fbde9c);background-clip:text;color:transparent">JOIN US FOR<span class="ml-6 text-4xl mt-2 " style="font-family: Playwrite US Trad">the vibes</span></h2>
-            <section id="panels" class="flex flex-col gap-10">
-                <div class="wrap h-fit w-full bg-beige flex flex-row gap-[25px] p-0 m-0 bg-black" 
-                style="border: 30px solid transparent; 
-                border-image-slice: 33% 33% 33% 33%;
-                border-image-width: 1.75em 1.75em 1.75em 1.75em;
-                border-image-outset: 0px 0px 0px 0px;
-                border-image-repeat: round;
-                border-image-source: url(./images/h-border.png)">
-                    <div class="w-[50%] h-auto bg-beige flex justify-center items-center px-10 grow-1">
-                        <div class="flex flex-col gap-2 text-center justify-center items-center ">
-                            <h3 class="pb-1 font-bold">WORKSHOPS</h3>
-                            <p>Learn Pygame, soldering, webdev and more!</p>
-                            <p>Want to host a workshop? Mention that in the sign up form!</p>
-                        </div>
-                    </div>
-                        <img src="./images/irl/IMG_0562.jpg" class="h-50 w-auto object-scale-down">
-                </div>
-                <div class="wrap h-fit w-full bg-beige flex flex-row gap-[25px] p-0 m-0 bg-black" 
-                style="border: 30px solid transparent; 
-                border-image-slice: 33% 33% 33% 33%;
-                border-image-width: 1.75em 1.75em 1.75em 1.75em;
-                border-image-outset: 0px 0px 0px 0px;
-                border-image-repeat: round;
-                border-image-source: url(./images/h-border.png)">
-                    <img src="./images/irl/IMG_0699.jpg" class="h-50 w-auto object-scale-down">
-
-                    <div class="w-[50%] h-auto bg-beige flex justify-center items-center px-10 grow-1">
-                        <div class="flex flex-col gap-2 text-center justify-center items-center ">
-                            <h3 class="pb-1 font-bold">AWESOME TIME</h3>
-                            <p>Free food, fun games, secret prizes, new friends. Welcome to people of ALL skill levels!</p>
-                        </div>
+        <!-- <h2 class="wrap flex flex-row text-5xl text-beige font-bold pb-10" style="background:linear-gradient(to right,#f0e9e1,#fbde9c);background-clip:text;color:transparent">JOIN US FOR<span class="ml-6 text-4xl mt-2 " style="font-family: Playwrite US Trad">the vibes</span></h2> -->
+        <div class="flex flex-col gap-10">
+            <!-- <div class="flex flex-wrap h-full w-full bg-beige gap-[25px] p-0 m-0 bg-black border" 
+            style="border-image-source: url(./images/h-border.png)">
+                <div class=" min-w-[50%] h-60 bg-beige flex justify-center items-center px-10 grow">
+                    <div class="flex flex-col gap-2 text-center justify-center items-center ">
+                        <h3 class="pb-1 font-bold">WORKSHOPS</h3>
+                        <p>Learn Pygame, soldering, webdev and more!</p>
+                        <p>Want to host a workshop? Mention that in the sign up form!</p>
                     </div>
                 </div>
+                <img src="./images/irl/IMG_0562.jpg" class="object-scale-down w-auto">
+            </div> -->
+            <div class="flex flex-wrap h-full w-full bg-beige gap-[25px] p-0 m-0 bg-black border" 
+            style="border-image-source: url(./images/h-border.png)">
+                <div class=" w-[50%] py-6 bg-beige flex justify-center items-center px-10 grow">
+                    <div class="flex flex-col gap-2 text-center justify-center items-center ">
+                        <h3 class="pb-1 font-bold">WORKSHOPS</h3>
+                        <p>Learn Pygame, soldering, webdev and more!</p>
+                        <p>Want to host a workshop? Mention that in the sign up form!</p>
+                    </div>
+                </div>
+                <img src="./images/irl/IMG_0562.jpg" class="object-scale-down w-[auto]">
+            </div>
 
-               
-            </section>
+            <!-- <div class=" h-fit w-full bg-beige flex gap-[25px] p-0 m-0 bg-black border" style="border-image-source: url(./images/h-border.png)">
+                <img src="./images/irl/IMG_0699.jpg" class="h-50 w-auto object-scale-down">
+
+                <div class="w-[50%] h-auto bg-beige flex justify-center items-center px-10 grow-1">
+                    <div class="flex flex-col gap-2 text-center justify-center items-center ">
+                        <h3 class="pb-1 font-bold">AWESOME TIME</h3>
+                        <p>Free food, fun games, secret prizes, new friends. Welcome to people of ALL skill levels!</p>
+                    </div>
+                </div>
+            </div> -->
+            
+        </div>
 
     </section>  
-    <!-- <section class=" sides bg-beige">
-        <h2 class="text-5xl text-blue font-bold py-10">SCHEDULE</span></h2>
-
-    </section> -->
-    <section id="faq" class=" sides bg-beige h-fit py-8">
-        <!-- <h2 class="text-5xl text-beige font-bold pb-10">FAQ</h2> -->
-
+    <section class=" sides bg-beige h-fit py-8">
         <div class="flex flex-wrap gap-8 items-center pb-10" >
             <div class="group flex flex-col gap-6 hover:scale-105 transition-all duration-200 ease-in-out">
                 <div id="pic" class ="shrink group-hover:rotate-357 rounded-xs aspect-[7/10] bg-blue h-110 shadow-md pt-5 px-5 pb-18 rotate-358 transition-all duration-200 ease-in-out">
@@ -260,56 +237,43 @@ object-scale-down -> keeps original scale of image and just scales down based on
         <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1bI_ZmaIuokMg3hbqiNDMjFbIuKs4qak&ehbc=2E312F&noprof=1" class="rounded-lg grow-1 h-110"></iframe>
         </div>
     </section>
-        <div id ="freesection" class=" w-screen  h-fit bg-teal pb-10 p-6">
+    <section class="sides w-screen  h-fit bg-teal pb-10 p-6">
             <p class="text-yellow py-1 text-left font-playwrite">Is everything free?</p>
             <h4 class="text-beige text-4xl font-bold py-3">
                 EVERYTHING IS FREE!!</h4>
             <p class="text-beige py-1 text-right">Food, drinks, t-shirt, swag, & vibes! Just show up! </p>
-        </div> 
+    </section>
         
-    <section class="sides bg-blue">
-        <div class="flex items-center text-beige gap-10 pt-12 pb-4">
+    <section class="sides bg-blue py-10">
+        <div class="flex wrap items-center text-beige gap-x-10 gap-y-5">
             <h2 class="text-5xl font-bold ">FAQ</h2>
             <p>Can't find your question below? <br>Shoot us an email at <span class="underline">jpeg@hackclub.com</span>!</p>
 
         </div>
-
-
-        <div class="flex flex-wrap justify-between pt-10 leading-[1.5] text-xl">
-            <div class=" vert h-auto bg-beige p-0 m-0 bg-black" 
-                style="border: 30px solid transparent; 
-                border-image-slice: 33% 33% 33% 33%;
-                border-image-width: 1.75em 1.75em 1.75em 1.75em;
-                border-image-outset: 0px 0px 0px 0px;
-                border-image-repeat: round;
-                border-image-source: url(./images/v-border.png)">
-                    <div class="flex flex-col h-full w-full bg-black gap-4">
-                        <div class="flex flex-wrap gap-2 p-6 bg-beige">
-                            <h3>What to bring?</h3>
-                            <ul class="list-disc pl-4">
-                                <li><span class="font-bold">Laptop, charger,</span> drawing tablet, and anything you need to make a game</li>
-                                <li><span class="font-bold">Sleeping bag</span> + whatever you need to spend the night</li>
-                                <li>Whatever you need to take a <span class="font-bold">shower</span> (please take a shower)</li>
-                            </ul>
-                        </div>
-                        <img src="./images/irl/IMG_0824.jpg" class="border-3 border-black">
-                        <div class="flex flex-wrap gap-2 p-6 bg-beige">
-                            <h3>Am I eligible?</h3>
-                            <p>18 or under? If yes, you're eligible! Any uncertainities, shoot us a quick email 
-                                <span class="font-bold">jpeg@hackclub.com</span></p>
-                        </div>
-                        <img src="./images/irl/IMG_0801.jpg" class="border-3 border-black overflow-hidden">
-
+        <div id="faq" class=" grid place-items-center grid-cols-[repeat(auto-fit,minmax(250px,1fr))] 
+        gap-x-30 gap-y-10 pt-10 leading-[1.5] text-xl min-h-[150vh] items-start">
+            <div class=" w-full h-full bg-beige p-0 m-0 bg-black border" style="border-image-source: url(./images/v-border.png)">
+                <div class="flex flex-col h-full w-full bg-black gap-4">
+                    <div class="flex flex-wrap gap-2 p-6 bg-beige">
+                        <h3>What to bring?</h3>
+                        <ul class="list-disc pl-4">
+                            <li><span class="font-bold">Laptop, charger,</span> drawing tablet, and anything you need to make a game</li>
+                            <li><span class="font-bold">Sleeping bag</span> + whatever you need to spend the night</li>
+                            <li>Whatever you need to take a <span class="font-bold">shower</span> (please take a shower)</li>
+                        </ul>
                     </div>
-            </div>
+                    <img src="./images/irl/IMG_0824.jpg" class="border-3 border-black">
+                    <div class="flex flex-wrap gap-2 p-6 bg-beige">
+                        <h3>Am I eligible?</h3>
+                        <p>18 or under? If yes, you're eligible! Any uncertainities, shoot us a quick email 
+                            <span class="font-bold">jpeg@hackclub.com</span></p>
+                    </div>
+                    <img src="./images/irl/IMG_0801.jpg" class="border-3 border-black overflow-hidden">
 
-            <div class=" vert h-auto bg-beige p-0 m-0 bg-black" 
-                style="border: 30px solid transparent; 
-                border-image-slice: 33% 33% 33% 33%;
-                border-image-width: 1.75em 1.75em 1.75em 1.75em;
-                border-image-outset: 0px 0px 0px 0px;
-                border-image-repeat: round;
-                border-image-source: url(./images/v-border.png)">
+                </div>
+            </div>
+        
+            <div class=" w-full h-full bg-beige p-0 m-0 bg-black border" style="border-image-source: url(./images/v-border.png)">
                     <div class="flex flex-col h-full bg-black gap-4" >
                         <img src="./images/irl/IMG_0801.jpg" class="border-3 border-black">
                         <div class="w-fit h-fit flex flex-wrap gap-2 p-6 bg-beige">
@@ -318,13 +282,10 @@ object-scale-down -> keeps original scale of image and just scales down based on
                         </div>
                         <img src="./images/irl/IMG_0606.jpg" class="border-3 border-black">
                         <div class="flex h-fit flex-wrap gap-2 p-6 bg-beige">
-                            <h3>My parent's are worried!</h3>
-                            <p>We’re here to help! Send them our <a href="https://tinyurl.com/5ykhrduh" class="underline">Parent Guide</a>. More questions? They can reach out to us at renran@hackclub.com</p>
+                            <h3>My parents are worried!</h3>
+                            <p>We're here to help! Send them our <a href="https://tinyurl.com/5ykhrduh" class="underline">Parent Guide</a>. More questions? They can reach out to us at renran@hackclub.com</p>
                         </div>
-                        <div class="grow-1 h-auto w-full bg-beige -mt-[25px]"></div> 
-
-
-
+                        <div class="grow h-auto w-full bg-beige -mt-[25px]"></div> 
                     </div>
             </div>
             
