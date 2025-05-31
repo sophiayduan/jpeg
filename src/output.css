@@ -1,4 +1,4 @@
-/*! tailwindcss v4.1.7 | MIT License | https://tailwindcss.com */
+/*! tailwindcss v4.1.8 | MIT License | https://tailwindcss.com */
 @layer properties;
 @layer theme, base, components, utilities;
 @layer theme {
@@ -336,8 +336,8 @@
   .h-screen {
     height: 100vh;
   }
-  .min-h-\[150vh\] {
-    min-height: 150vh;
+  .min-h-\[100vh\] {
+    min-height: 100vh;
   }
   .w-0 {
     width: calc(var(--spacing) * 0);
@@ -360,8 +360,13 @@
   .w-27 {
     width: calc(var(--spacing) * 27);
   }
+<<<<<<< HEAD
   .w-55 {
     width: calc(var(--spacing) * 55);
+=======
+  .w-50 {
+    width: calc(var(--spacing) * 50);
+>>>>>>> c3128c4aff3adf56e236a8e200bc362e9ccf7f2a
   }
   .w-55\/100 {
     width: calc(55/100 * 100%);
@@ -389,9 +394,6 @@
   }
   .w-\[60\%\] {
     width: 60%;
-  }
-  .w-\[auto\] {
-    width: auto;
   }
   .w-auto {
     width: auto;
@@ -942,6 +944,9 @@ h4 {
   }
   .nav {
     justify-content: center;
+  }
+  nav {
+    display: none;
   }
   #hc {
     width: 10em;
