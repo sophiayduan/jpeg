@@ -212,14 +212,8 @@
   .top-0 {
     top: calc(var(--spacing) * 0);
   }
-  .top-55 {
-    top: calc(var(--spacing) * 55);
-  }
   .top-55\/100 {
     top: calc(55/100 * 100%);
-  }
-  .top-57 {
-    top: calc(var(--spacing) * 57);
   }
   .top-57\/100 {
     top: calc(57/100 * 100%);
@@ -233,14 +227,8 @@
   .left-0 {
     left: calc(var(--spacing) * 0);
   }
-  .left-16 {
-    left: calc(var(--spacing) * 16);
-  }
   .left-16\/100 {
     left: calc(16/100 * 100%);
-  }
-  .left-29 {
-    left: calc(var(--spacing) * 29);
   }
   .left-29\/100 {
     left: calc(29/100 * 100%);
@@ -284,9 +272,6 @@
   .grid {
     display: grid;
   }
-  .table {
-    display: table;
-  }
   .aspect-\[7\/10\] {
     aspect-ratio: 7/10;
   }
@@ -299,9 +284,6 @@
   }
   .h-16 {
     height: calc(var(--spacing) * 16);
-  }
-  .h-30 {
-    height: calc(var(--spacing) * 30);
   }
   .h-30\/100 {
     height: calc(30/100 * 100%);
@@ -342,14 +324,8 @@
   .w-0 {
     width: calc(var(--spacing) * 0);
   }
-  .w-1 {
-    width: calc(var(--spacing) * 1);
-  }
   .w-1\/1 {
     width: calc(1/1 * 100%);
-  }
-  .w-2 {
-    width: calc(var(--spacing) * 2);
   }
   .w-2\/3 {
     width: calc(2/3 * 100%);
@@ -360,13 +336,8 @@
   .w-27 {
     width: calc(var(--spacing) * 27);
   }
-<<<<<<< HEAD
-  .w-55 {
-    width: calc(var(--spacing) * 55);
-=======
   .w-50 {
     width: calc(var(--spacing) * 50);
->>>>>>> c3128c4aff3adf56e236a8e200bc362e9ccf7f2a
   }
   .w-55\/100 {
     width: calc(55/100 * 100%);
@@ -416,23 +387,14 @@
   .flex-1 {
     flex: 1;
   }
-  .flex-shrink {
-    flex-shrink: 1;
-  }
   .shrink {
     flex-shrink: 1;
-  }
-  .flex-grow {
-    flex-grow: 1;
   }
   .grow {
     flex-grow: 1;
   }
   .grow-1 {
     flex-grow: 1;
-  }
-  .border-collapse {
-    border-collapse: collapse;
   }
   .rotate-3 {
     rotate: 3deg;
@@ -442,12 +404,6 @@
   }
   .rotate-358 {
     rotate: 358deg;
-  }
-  .transform {
-    transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
-  }
-  .resize {
-    resize: both;
   }
   .list-disc {
     list-style-type: disc;
@@ -740,10 +696,6 @@
     --tw-shadow: 0 4px 6px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 2px 4px -2px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
-  }
   .transition {
     transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, visibility, content-visibility, overlay, pointer-events;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
@@ -804,16 +756,6 @@
       @media (hover: hover) {
         --tw-font-weight: var(--font-weight-bold);
         font-weight: var(--font-weight-bold);
-      }
-    }
-  }
-  .hover\:scale-1 {
-    &:hover {
-      @media (hover: hover) {
-        --tw-scale-x: 1%;
-        --tw-scale-y: 1%;
-        --tw-scale-z: 1%;
-        scale: var(--tw-scale-x) var(--tw-scale-y);
       }
     }
   }
@@ -1050,26 +992,6 @@ h4 {
     justify-content: space-between;
   }
 }
-@property --tw-rotate-x {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-rotate-y {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-rotate-z {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-skew-x {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-skew-y {
-  syntax: "*";
-  inherits: false;
-}
 @property --tw-border-style {
   syntax: "*";
   inherits: false;
@@ -1148,11 +1070,6 @@ h4 {
   inherits: false;
   initial-value: 0 0 #0000;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @property --tw-duration {
   syntax: "*";
   inherits: false;
@@ -1179,11 +1096,6 @@ h4 {
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
-      --tw-rotate-x: initial;
-      --tw-rotate-y: initial;
-      --tw-rotate-z: initial;
-      --tw-skew-x: initial;
-      --tw-skew-y: initial;
       --tw-border-style: solid;
       --tw-leading: initial;
       --tw-font-weight: initial;
@@ -1201,7 +1113,6 @@ h4 {
       --tw-ring-offset-width: 0px;
       --tw-ring-offset-color: #fff;
       --tw-ring-offset-shadow: 0 0 #0000;
-      --tw-outline-style: solid;
       --tw-duration: initial;
       --tw-ease: initial;
       --tw-scale-x: 1;
