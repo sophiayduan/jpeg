@@ -53,12 +53,6 @@ h4{
   font-size:clamp(2.5rem,5vw,4rem)
 }
 
-.vert{
-  width:clamp(20rem, 58rem, 48%);
-  margin-bottom:2rem;
-  overflow:hidden;
-  height:auto;
-}
 
 .sides{
   padding-left:clamp(8%, 12vw, 18rem);
@@ -78,12 +72,9 @@ h4{
   border-image-width: 1.75em 1.75em 1.75em 1.75em;
   border-image-outset: 0px 0px 0px 0px;
   border-image-repeat: round;
-  border-image-source: url(./images/v-border.png)
 }
 
-.column{
-  aspect-ratio:1/2;
-}
+
 @media(max-width:700px){
   #overlay{
     inset:10px;
@@ -154,14 +145,18 @@ h4{
     height: 40px;
   }
 
+  .help {
+    display:flex;
+    flex-direction:column;
+
+  }
  
 }
 @media(min-width:700px){
-  /* .sides{
-    padding-left: 15rem;
-    padding-right:15rem;
-  } */
 
+  .help {
+    display:flex-inline;
+  }
   .nav{
     justify-content: end;
     padding-right:8vw;
@@ -176,10 +171,6 @@ h4{
     visibility: hidden;
   }
 
-  #freesection{
-    padding-left:15rem;
-    padding-right:15rem;
-  }
 
 }
 
