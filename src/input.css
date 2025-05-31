@@ -28,6 +28,10 @@
     animation-fill-mode: forwards;
 }
 
+img {
+  display:block;
+  max-width:100%;
+}
 p, li {
   font-size:clamp(1rem, 2.25vw, 1.25rem);
 }
@@ -50,12 +54,36 @@ h4{
 }
 
 .vert{
-  width:clamp(24rem, 68rem, 48%);
+  width:clamp(20rem, 58rem, 48%);
   margin-bottom:2rem;
   overflow:hidden;
   height:auto;
 }
 
+.sides{
+  padding-left:clamp(8%, 12vw, 18rem);
+  padding-right:clamp(8%, 12vw, 18rem);
+  margin-inline:auto;
+
+  /* max-width:960px; */
+  
+
+
+}
+
+
+.border{
+  border: 30px solid transparent; 
+  border-image-slice: 33% 33% 33% 33%;
+  border-image-width: 1.75em 1.75em 1.75em 1.75em;
+  border-image-outset: 0px 0px 0px 0px;
+  border-image-repeat: round;
+  border-image-source: url(./images/v-border.png)
+}
+
+.column{
+  aspect-ratio:1/2;
+}
 @media(max-width:700px){
   #overlay{
     inset:10px;
@@ -63,7 +91,10 @@ h4{
     /* display:none; */
     
   }
-  
+  .nav {
+    justify-content: center;
+    
+  }
   #hc{
     width:10em;
     margin-top:-0.5em;
@@ -73,10 +104,10 @@ h4{
     width:4em;
     height:4em;
   }
-  .sides{
+  /* .sides{
     padding-left:10%;
     padding-right:10%;
-  }
+  } */
   .hide{
     display:none;
 
@@ -126,9 +157,14 @@ h4{
  
 }
 @media(min-width:700px){
-  .sides{
+  /* .sides{
     padding-left: 15rem;
     padding-right:15rem;
+  } */
+
+  .nav{
+    justify-content: end;
+    padding-right:8vw;
   }
 
   .big{
