@@ -33,11 +33,11 @@ object-scale-down -> keeps original scale of image and just scales down based on
 </head>
 <body style="max-width: 100%;">
     <div id="h-nav" class="fixed h-[5vh] bg-white w-full flex flex-col justify-evenly" style="z-index: 10000; opacity: 0">
-        <div style="max-width: 100%;" class="flex items-center w-0 bg-teal rounded-sm h-[2vh] py-2" id="progress-bar"></div>
+        <div style="max-width: 100%;" class="flex items-center w-0 bg-pink h-[2vh] py-2" id="progress-bar"></div>
         <div class="text-4xl text-bold flex justify-evenly pointer-events-auto py-[2vh] bg-white"> 
-                <a href = "#about" class="">ABOUT</a>
-                <a href = "#faq" class="">FAQ</a>
-                <a href = "#landing" class="">SIGNUP</a>
+                <a href = "#about" class="transition-all duration-600 ease-in-out hover:scale-110 text-bold ">ABOUT</a>
+                <a href = "#faq" class="transition-all duration-600 ease-in-out hover:scale-110 text-bold">FAQ</a>
+                <a href = "#landing" class="transition-all duration-600 ease-in-out hover:scale-110 text-bold">SIGNUP</a>
         </div>
     </div>
     <div class="absolute inset-10 z-20 pointer-events-none" id="overlay">
@@ -49,9 +49,9 @@ object-scale-down -> keeps original scale of image and just scales down based on
         </div>
         <div class="big absolute top-0 right-0 border-t-4 border-r-4 p-6 ">
             <nav class="hide text-right text-4xl flex flex-col font-bold overflow-visible pointer-events-auto"> 
-                <a href = "#about" class="justify-start transition duration-150 ease-in-out hover:underline">ABOUT</a>
-                <a href = "#faq" class=" transition duration-150 ease-in-out  hover:underline ">FAQ</a>
-                <a href = "#landing" class="transition duration-150 ease-in-out  hover:underline">SIGNUP</a>
+                <a href = "#about" class=" hide justify-start transition duration-150 ease-in-out hover:underline">ABOUT</a>
+                <a href = "#faq" class="hide  transition duration-150 ease-in-out  hover:underline ">FAQ</a>
+                <a href = "#landing" class="hide transition duration-150 ease-in-out  hover:underline">SIGNUP</a>
             </nav>
         </div>
         <div class="big absolute bottom-0 border-b-4 border-l-4 p-6 flex flex-col gap-2">
@@ -233,8 +233,7 @@ object-scale-down -> keeps original scale of image and just scales down based on
                 </div>
             </div>
         
-        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1bI_ZmaIuokMg3hbqiNDMjFbIuKs4qak&ehbc=2E312F&noprof=1" class="rounded-lg grow-1 h-110"></iframe>
-        </div>
+            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1YMmShufMGxiH8DnJN7DdGytxGsZTkNc&ehbc=2E312F&noprof=1"class="rounded-lg grow-1 h-110"></iframe>        </div>
     </section>
     <section class="sides w-screen  h-fit bg-teal pb-10 p-6">
             <p class="text-yellow py-1 text-left font-playwrite">Is everything free?</p>
