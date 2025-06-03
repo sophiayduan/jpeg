@@ -7,4 +7,18 @@ document.addEventListener("scroll", function () {
   document.getElementById(
     "progress-bar"
   ).style.width = `${widthBasedOnScrollPercentage}vw`;
+
+  let pastLandingPagePos = document.getElementById('blurb').scrollHeight
+  if (userScrollPos >= pastLandingPagePos) {
+    document.getElementById('h-nav').style.setProperty("visibility", "visible")
+    console.log(document.getElementById('h-nav').style.visibility)
+  }
+  
+  if (userScrollPos <= pastLandingPagePos) {
+    document.getElementById('h-nav').style.setProperty("visibility", "hidden")
+    console.log(document.getElementById('h-nav').style.visibility)
+
+  }
+
 })
+

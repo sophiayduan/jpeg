@@ -36,14 +36,14 @@ object-scale-down -> keeps original scale of image and just scales down based on
     <title>JPEG</title>
 </head>
 <body style="max-width: 100%;">
-    <!--<div id="h-nav" class="fixed h-[5vh] bg-white w-full flex flex-col justify-evenly" style="z-index: 10000; opacity: 0">
+    <div id="h-nav" class="fixed h-[5vh] bg-white w-full flex flex-col justify-evenly" style="z-index: 10000;">
         <div style="max-width: 100%;" class="flex items-center w-0 bg-pink h-[2vh] py-2" id="progress-bar"></div>
         <div class="text-4xl text-bold flex justify-evenly pointer-events-auto py-[2vh] bg-white"> 
-                <a href = "#about" class="transition-all duration-600 ease-in-out hover:scale-110 text-bold ">ABOUT</a>
-                <a href = "#faq" class="transition-all duration-600 ease-in-out hover:scale-110 text-bold">FAQ</a>
-                <a href = "#landing" class="transition-all duration-600 ease-in-out hover:scale-110 text-bold">SIGNUP</a>
+                <a href = "#about" class="transition-all duration-300 ease-in-out hover:scale-130 text-bold ">ABOUT</a>
+                <a href = "#faq" class="transition-all duration-300 ease-in-out hover:scale-130 text-bold">FAQ</a>
+                <a href = "#landing" class="transition-all duration-300 ease-in-out hover:scale-130 text-bold">SIGNUP</a>
         </div>
-    </div>-->
+    </div>
     <div class="absolute inset-10 z-20 pointer-events-none" id="overlay">
         <div class="big border-t-4 border-l-4 p-6 ">
             <div class="rec flex justify-center items-center absolute gap-3">
@@ -90,7 +90,7 @@ object-scale-down -> keeps original scale of image and just scales down based on
                
         </div>
     </section>
-    <section class="sides relative h-auto w-screen bg-blue py-10">
+    <section class="sides relative h-auto w-screen bg-blue py-10" id="blurb">
         <div class="flex flex-wrap items-center p-8 rounded-2xl w-full gap-10 h-full bg-white justify-center items-start">
             <img src="images/irl/IMG_0608.jpg" class="rounded-2xl w-100 object-scale-down">
             <p class="leading-[1.5] text-xl flex-1 text-blue min-w-60">Welcome to JPEG! July 5-6th, join us for an overnight gender-focused 

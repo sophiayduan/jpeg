@@ -15,18 +15,28 @@
    
 }
 
+#h-nav {
+  visibility: hidden;
+  transition: visibility 5s ease-in-out;
+}
+
+@supports (animation-timeline: scroll(block root)) {
+  #h-nav {
+      visibility: visible;
+      animation: appear 10s ease-in-out;
+      animation-timeline: scroll(block root);
+      animation-range: 40vh 70vh;
+      animation-fill-mode: forwards;
+  }
+}
+
 @keyframes appear {
   100% {
     opacity: 100%;
   }
 }
 
-#h-nav {
-    animation: appear 10s ease-in-out;
-    animation-timeline: scroll(block root);
-    animation-range: 40vh 70vh;
-    animation-fill-mode: forwards;
-}
+
 
 img {
   display:block;
