@@ -17,7 +17,7 @@
 
 #h-nav {
   visibility: hidden;
-  transition: visibility 5s ease-in-out;
+  transition: visibility 1ms ease-in-out;
 }
 
 @supports (animation-timeline: scroll(block root)) {
