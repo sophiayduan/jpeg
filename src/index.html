@@ -35,14 +35,32 @@ object-scale-down -> keeps original scale of image and just scales down based on
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+US+Trad:wght@100..400&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>JPEG</title>
 </head>
-<body style="max-width: 100%;">
-    <div id="h-nav" class="fixed h-[5vh] bg-white w-full flex flex-col justify-evenly" style="z-index: 10000;">
-        <div style="max-width: 100%;" class="flex items-center w-0 bg-pink h-[2vh] py-2" id="progress-bar"></div>
-        <div class="text-4xl text-bold flex justify-evenly pointer-events-auto py-[2vh] bg-white"> 
-                <a href = "#about" class="transition-all duration-300 ease-in-out hover:scale-130 text-bold ">ABOUT</a>
-                <a href = "#faq" class="transition-all duration-300 ease-in-out hover:scale-130 text-bold">FAQ</a>
-                <a href = "#landing" class="transition-all duration-300 ease-in-out hover:scale-130 text-bold">SIGNUP</a>
+<body class="w-screen">
+    <div id="h-nav" class="fixed h-[5vh] drop-shadow shadow-black bg-white w-full flex flex-col justify-evenly" style="z-index: 10000;">
+        <div class="w-screen border-b-2">
+        <div class="w-screen flex items-center w-0 bg-pink h-[2vh] py-1" id="progress-bar"></div>
+
         </div>
+        <!-- <div class="items-center text-4xl text-bold flex px-[10%] w-screen pointer-events-auto py-[1vh] bg-white">  -->
+        <div class="flex justify-around items-center gap-10 bg-white w-screen py-1 h-fit">
+            <div class="flex items-center justify-center h-auto">
+                <a href="#landing" class="drop-shadow font-Bernoru text-blue text-4xl font-black justify-start scale-x-125">.jpeg</a>
+            </div>
+                <div class="space-x-8 hide">
+                    <a href = "#about" class="text-3xl transition-all font-bold duration-300 ease-in-out hover:scale-110">ABOUT</a>
+                    <a href = "#faq" class="text-3xl transition-all font-bold duration-300 ease-in-out hover:scale-110">FAQ</a>
+                </div>
+                <a href="https://jpeg.fillout.com/register" target="_blank"
+                class="flex items-center justify-center transition-all duration-600 ease-in-out rounded-full hover:underline 
+                text-lg hover:shadow-lg hover:scale-110 text-beige bg-teal p-4 aspect-[10/3] h-[80%] font-bold hover:text-yellow">
+                SIGN UP NOW!
+                </a>
+        </div>
+            
+             
+         
+                
+            <!-- </div> -->
     </div>
     <div class="absolute inset-10 z-20 pointer-events-none" id="overlay">
         <div class="big border-t-4 border-l-4 p-6 ">
@@ -79,7 +97,7 @@ object-scale-down -> keeps original scale of image and just scales down based on
 
     <section id="landing" class="h-screen flex justify-center items-center bg-beige">
         <div class="flex flex-col gap-2 justify-center items-center">
-            <h1 class="text-blue font-Bernoru">.jpeg</h1>
+            <h1 class="text-blue font-Bernoru ">.jpeg</h1>
             <h3 class="text-black pb-2 font-playwrite -mt-5 text-center" >"A photo is worth a thousand lines of code"</h3>            
             <p class="font-bold text-blue">JULY 5-6, 2025 @ CARLETON UNIVERSITY</p>
             <a href="https://jpeg.fillout.com/register" target="_blank"
@@ -292,7 +310,7 @@ object-scale-down -> keeps original scale of image and just scales down based on
                         <img src="./images/irl/IMG_0606.jpg" class="border-3 border-black">
                         <div class="flex h-fit flex-wrap gap-2 p-6 bg-beige">
                             <h3>My parents are worried!</h3>
-                            <p>We're here to help! They can reach out to us at renran@hackclub.com</p>
+                            <p>We're here to help! They can check out the <a href="https://tinyurl.com/53bh36ry" class="underline font-bold">Parent Guide!</a> <br>Still unsure? Email renran@hackclub.com</p>
                         </div>
                         <div class="grow h-auto w-full bg-beige -mt-[25px]"></div> 
                     </div>
@@ -303,9 +321,13 @@ object-scale-down -> keeps original scale of image and just scales down based on
     <footer class="bg-beige h-auto py-2">
         <div class="flex flex-col gap-1 justify-center items-center">
             <img src="./images/signatures.png" alt="signatures" class="w-100 h-auto">
-            <p1 class="font-playwrite text-blue">
+                <p1 class="font-playwrite text-blue">
                 made by teenagers, for teenagers</p1>
+            <div class="flex items-center gap-4 ">
+            
             <a href="https://github.com/sophiayduan/jpeg" target="_blank" class="underline">Github</a> 
+            <!-- <img src="./favicon/favicon-32x32.png" alt="" class="size-6 drop-shadow-lg"> -->
+</div>
         </div>
     </footer>
 </body>
