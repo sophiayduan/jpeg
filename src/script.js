@@ -10,13 +10,13 @@ document.addEventListener("scroll", function () {
 
   let pastLandingPagePos = document.getElementById('blurb').scrollHeight
   if (userScrollPos >= pastLandingPagePos) {
-    document.getElementById('h-nav').style.setProperty("visibility", "visible")
-    console.log(document.getElementById('h-nav').style.visibility)
+    document.getElementById('h-nav').style.setProperty("opacity", 100)
+    console.log(document.getElementById('h-nav').style.opacity)
   }
   
   if (userScrollPos <= pastLandingPagePos) {
-    document.getElementById('h-nav').style.setProperty("visibility", "hidden")
-    console.log(document.getElementById('h-nav').style.visibility)
+    document.getElementById('h-nav').style.setProperty("opacity", 0)
+    console.log(document.getElementById('h-nav').style.opacity)
 
   }
 
