@@ -347,6 +347,9 @@
   .h-screen {
     height: 100vh;
   }
+  .max-h-\[20vh\] {
+    max-height: 20vh;
+  }
   .min-h-\[100vh\] {
     min-height: 100vh;
   }
@@ -389,17 +392,8 @@
   .w-100 {
     width: calc(var(--spacing) * 100);
   }
-  .w-\[1vw\] {
-    width: 1vw;
-  }
-  .w-\[10vw\] {
-    width: 10vw;
-  }
   .w-\[11vw\] {
     width: 11vw;
-  }
-  .w-\[15vw\] {
-    width: 15vw;
   }
   .w-\[40\%\] {
     width: 40%;
@@ -843,6 +837,13 @@
     --tw-ease: var(--ease-in-out);
     transition-timing-function: var(--ease-in-out);
   }
+  .group-hover\:rotate-0 {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        rotate: 0deg;
+      }
+    }
+  }
   .group-hover\:rotate-5 {
     &:is(:where(.group):hover *) {
       @media (hover: hover) {
@@ -861,6 +862,13 @@
     &:is(:where(.group):hover *) {
       @media (hover: hover) {
         rotate: 357deg;
+      }
+    }
+  }
+  .group-hover\:rotate-359 {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        rotate: 359deg;
       }
     }
   }
@@ -961,6 +969,9 @@
 #h-nav {
   opacity: 0;
   transition: opacity 1s ease-in-out;
+}
+.pic {
+  max-height: 10%;
 }
 @supports (animation-timeline: scroll(block root)) {
   #h-nav {

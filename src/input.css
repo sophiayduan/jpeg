@@ -20,6 +20,11 @@
   transition: opacity 1s ease-in-out;
 }
 
+.pic {
+  max-height: 10%;
+}
+
+
 @supports (animation-timeline: scroll(block root)) {
   #h-nav {
       visibility: visible;
