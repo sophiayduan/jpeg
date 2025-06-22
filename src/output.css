@@ -1087,9 +1087,7 @@ h4 {
   .hide {
     display: none;
   }
-  .sign-up {
-    width: 30%;
-  }
+
 }
 @media (min-width:700px) {
   .help {
