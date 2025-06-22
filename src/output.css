@@ -249,6 +249,9 @@
   .left-\[20\%\] {
     left: 20%;
   }
+  .left-\[22\%\] {
+    left: 22%;
+  }
   .z-20 {
     z-index: 20;
   }
@@ -319,6 +322,9 @@
   }
   .h-80 {
     height: calc(var(--spacing) * 80);
+  }
+  .h-100 {
+    height: calc(var(--spacing) * 100);
   }
   .h-110 {
     height: calc(var(--spacing) * 110);
@@ -406,6 +412,12 @@
   }
   .min-w-\[50\%\] {
     min-width: 50%;
+  }
+  .min-w-\[100px\] {
+    min-width: 100px;
+  }
+  .min-w-\[300px\] {
+    min-width: 300px;
   }
   .flex-1 {
     flex: 1;
@@ -956,6 +968,26 @@
       height: 5vh;
     }
   }
+  .sm\:w-1\/2 {
+    @media (width >= 40rem) {
+      width: calc(1/2 * 100%);
+    }
+  }
+  .sm\:w-full {
+    @media (width >= 40rem) {
+      width: 100%;
+    }
+  }
+  .sm\:flex-grow {
+    @media (width >= 40rem) {
+      flex-grow: 1;
+    }
+  }
+  .sm\:grow-1 {
+    @media (width >= 40rem) {
+      flex-grow: 1;
+    }
+  }
   .sm\:px-10 {
     @media (width >= 40rem) {
       padding-inline: calc(var(--spacing) * 10);
@@ -1111,6 +1143,7 @@ h4 {
   }
   body {
     font-family: 'Prompt', sans-serif;
+    background-color: #f0e9e1;
   }
   .font-prompt {
     font-family: 'Prompt', sans-serif;
