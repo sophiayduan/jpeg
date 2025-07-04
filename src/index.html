@@ -112,16 +112,20 @@ object-scale-down -> keeps original scale of image and just scales down based on
         </div>
     </section>
     <section class="sides relative h-auto w-screen bg-blue py-10" id="blurb">
-        <div class="flex flex-wrap items-center p-8 rounded-2xl w-full gap-10 h-full bg-white justify-center items-start">
-            <img src="images/irl/IMG_0608.jpg" class="rounded-2xl w-100 object-scale-down">
-            <p class="leading-[1.5] text-xl flex-1 text-blue min-w-60">Welcome to JPEG! July 5-6th, join us for an overnight gender-focused 
-                game jam with 70+ teens at Carleton University.
+        <div class="flex flex-wrap items-center p-8 rounded-xl w-full gap-10 h-full bg-white justify-center items-start">
+            <img src="images/irl/IMG_0608.jpg" class="rounded-xl w-100 ">
+            <div class="flex-1  min-w-80">
+                <span class="font-semibold leading-[1.5] text-3xl sm:text-4xl text-black">Welcome to JPEG!</span>
+                <span class="text-2xl pt-2"> <br> July 5-6th, join us for an overnight gender-focused 
+                    game jam with 70+ teens at Carleton University. You'll have 25 hours to make a game from a picture...</p>
+                    <br>
 
-                <span class="font-bold text-teal"><br><br> You'll have 25 hours to make a game from a picture...</span>
-                <br>
-                Are you ready? 
-            </p>
+                    <h3 class="font-semibold text-xl text-teal "> Are you ready?</h3> 
+                </span>
+            
         </div>
+        
+        
         <!-- <div class="absolute flex flex-row justify-between w-1/1 left-0" style="overflow-x: clip;">
             <img src="images/shark.png" alt="ikea shark" class="w-[40%] object-scale-down -mt-[50%]" style="margin-left: -8vw; ">
             <img src="images/bear.png" alt="ikea bear" class="w-[40%] object-scale-down -mt-[44%]" style="margin-right: -9vw; ">
@@ -273,31 +277,33 @@ object-scale-down -> keeps original scale of image and just scales down based on
     </section> -->
 
     <section class="sides relative h-auto w-screen bg-blue py-10">
-        <div class="flex flex-col items-center p-4 rounded-2xl w-full gap-x-10 gap-y-2 h-full bg-white justify-center">
-            <div class="flex flex-wrap items-center p-8 rounded-2xl w-full gap-x-10 gap-y- h-full bg-white justify-center items-start">
-                <img src="images/irl/IMG_0564.jpg" class="rounded-2xl h-60 object-scale-down">
-                <div class="flex flex-col w-50 grow-1 items-center justify-center leading-[1.5]">
-                    <p class="text-1xl grow-1 text-blue">
-                        WANT TO GET FLOWN OUT TO <b>NEW YORK CITY?</b> Sign up for the 
-                        <a href="https://athena.hackclub.com/" style="font-weight: bold;">Athena Award</a></p><br>
-                    <ol class="text-blue mt-2">
-                        <br>
-                        <li>1. Earn Hack Club's <b>Athena Award</b>, an industry recognized technical certificate.</li>
-                        <li>2. Code <b>30hrs</b>, 3 projects, and travel to New York City!</li>
-                        <li>3. Win prizes as you code, including laptops, iPads and hoodies.</li>
-                    </ol>
-                </div> 
-            </div>
-            <div  class="flex flex-col gap-2 w-full items-center">
-                <p class="font-bold text-teal w-2/3 text-3xl text-center full-width">
-                    JPEG is an Athena Event, so you can earn artifacts by coding at JPEG!</p>  
+        <!-- <div class="grid place-items-center grid-cols-[repeat(auto-fit,minmax(250px,1fr))] 
+        gap-10 p-6 bg-white rounded-xl leading-[1.5] min-h-[10vh] items-start"> -->
+        <div class="grid sm:grid-cols-1 lg:grid-cols-2 gap-10 p-6 bg-white rounded-xl leading-[1.5] min-h-[10vh] ">
+            <div class="sm:px-10 pt-4 xl:space-y-4">
+                <span class="py-4 font-bold sm:text-2xl md:text-2xl ">Sign up for the <a class="text-pink">Athena Award! </a></span>
+                <br>
+                <p>If you build three technical projects and spend <b>30 hours of coding</b> by Oct 31st, 
+                    </p>
+                <ul class="list-decimal list-inside space-y-1 pt-4 pb-10">
+                    <li>Build cool projects</li>
+                    <li>Submit them to Athena</li>
+                    <li>Fly to NYC for an all girls hackathon</li>
+                </ul>
+                <div class="flex flex-col gap-3 items-center text-center">
                     <a href="https://athena.hackclub.com/" target="_blank"
                     class="flex items-center justify-center transition-all duration-600 ease-in-out rounded-lg hover:underline 
-                    text-2xl hover:scale-120 hover:shadow-xl text-beige bg-pink h-16 w-60 font-bold hover:text-beige">
+                    text-2xl hover:scale-120 hover:shadow-xl text-white bg-pink h-16 w-60 font-bold hover:text-beige">
                     START
                     </a>
+                    <span class="">Since JPEG is an Athena event, coding at JPEG will earn you Artifacts for Athena!</span>
+                </div>
+            </div>
+            <div class="w-full flex justify-center items-center">
+                <img src="images/irl/IMG_0564.jpg" class="rounded-xl w-full">
             </div>
         </div>
+        
     </section>
 
 
@@ -372,7 +378,7 @@ object-scale-down -> keeps original scale of image and just scales down based on
 
         </div>
         <div  class=" grid place-items-center grid-cols-[repeat(auto-fit,minmax(250px,1fr))] 
-        gap-10 pt-10 leading-[1.5] text-xl min-h-[100vh] items-start">
+        gap-10 pt-10 leading-[1.5] text-xl min-h-[100vh] items-start xl:gap-28">
             <div class=" w-full h-full bg-beige p-0 m-0 bg-black border" style="border-image-source: url(./images/v-border.png)">
                 <div class="flex flex-col h-full w-full bg-black gap-4">
                     <div class="flex flex-wrap gap-2 p-6 bg-beige">
