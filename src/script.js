@@ -22,3 +22,18 @@ document.addEventListener("scroll", function () {
 
 })
 
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+let title = document.getElementById('jpeg-title')
+
+document.addEventListener('DOMContentLoaded', function(){
+  console.log(`title loaded`)
+  sleep(3000)
+  title.style.transition = "mask-position 2s ease,-webkit-mask-position 2s ease"
+  title.style.maskPosition = 0
+  title.style.opacity = 1
+  title.style.webkitMaskPosition = '120%'
+  console.log(`shine done`)
+})

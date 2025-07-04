@@ -46,9 +46,12 @@ object-scale-down -> keeps original scale of image and just scales down based on
             <div class="flex items-center justify-center h-auto">
                 <a href="#landing" class="drop-shadow font-Bernoru text-blue text-4xl font-black justify-start scale-x-125">.jpeg</a>
             </div>
-                <div class="space-x-8 hide">
-                    <a href = "#about" class="text-3xl transition-all font-bold duration-300 ease-in-out hover:scale-110">ABOUT</a>
-                    <a href = "#faq" class="text-3xl transition-all font-bold duration-300 ease-in-out hover:scale-110">FAQ</a>
+                <div class="space-x-8 flex row">
+                    <a href = "#about" class="hide text-3xl transition-all font-bold duration-300 ease-in-out hover:scale-110">ABOUT</a>
+                    <a href = "#faq" class="hide text-3xl transition-all font-bold duration-300 ease-in-out hover:scale-110">FAQ</a>
+                    <a href="https://www.instagram.com/jpeg_ottawa?igsh=MTN2Z3J0c2kxZzBwaA==" class="text-3xl transition-all font-bold duration-300 ease-in-out hover:scale-110">
+                        <img src="./images/insta-icon.png" alt="jpeg instagram" class="h-9">
+                    </a>
                 </div>
                 <a href="https://jpeg.fillout.com/register" target="_blank"
                 class="flex justify-center items-center transition-all duration-600 ease-in-out hover:underline 
@@ -97,7 +100,7 @@ object-scale-down -> keeps original scale of image and just scales down based on
 
     <section id="landing" class="h-screen flex justify-center items-center bg-beige px-2">
         <div class="flex flex-col gap-2 justify-center items-center">
-            <h1 class="text-blue font-Bernoru ">.jpeg</h1>
+            <h1 class="text-blue font-Bernoru " id="jpeg-title"> <span id="dot" class="letter">.</span> <span id="j" class="letter">j</span> <span id="p" class="letter">p</span> <span id="e" class="letter">e</span> <span id="g" class="letter">g</span></h1>
             <h3 class="text-black pb-2 font-playwrite -mt-5 text-center" >"A photo is worth a thousand lines of code"</h3>            
             <p class="font-bold text-center text-blue">JULY 5-6, 2025 @ CARLETON UNIVERSITY</p>
             <a href="https://jpeg.fillout.com/register" target="_blank"
@@ -140,7 +143,7 @@ object-scale-down -> keeps original scale of image and just scales down based on
 
     <section id = "about" class="scroll-mt-25 pt-4 pb-24 bg-beige h-auto "> 
        
-        <img id="rope" src="./images/rope.png" alt="rope" class="absolute left-0">
+        <img id="rope" src="./images/rope.png" alt="rope" class="absolute left-0" style="width: 100vw;">
         <div class="h-auto flex flex-wrap justify-center gap-16 items-center w-full text-center">
             <div class="group w-70 flex flex-col items-center gap-6 hover:scale-105 transition-all duration-200 ease-in-out">
                 <div class =" pic shadow-md group-hover:rotate-5 rounded-xs aspect-[7/10] w-58 bg-blue pt-5 px-5 pb-18 rotate-3 transition-all duration-200 ease-in-out">
@@ -202,6 +205,72 @@ object-scale-down -> keeps original scale of image and just scales down based on
         </div>
     
     </section>
+
+    <!-- <section class="bg-teal  sides h-fit py-14">
+        <h2 class="text-5xl font-bold text-beige">SCHEDULE</h2>
+        <table class="w-1/1">
+            <tr>
+                <td>1:30 PM</td>
+                <td>Registration Opens</td>
+            </tr>
+            <tr>
+                <td>2:00 PM</td>
+                <td>Registration Closes + Game #1</td>
+            </tr>
+            <tr>
+                <td>2:30 PM</td>
+                <td>Opening Ceremony + Icebreakers</td>
+            </tr>
+            <tr>
+                <td>3:00 PM</td>
+                <td>Workshop #1 - Boba Drops</td>
+            </tr>
+            <tr>
+                <td>4:00 PM</td>
+                <td>Workshops #2 & #3 - Kaplay & Jumpstart</td>
+            </tr>
+            <tr>
+                <td>6:30 PM</td>
+                <td>Dinner</td>
+            </tr>
+            <tr>
+                <td>8:30 PM</td>
+                <td>Workshop #4 - Solder</td>
+            </tr>
+            <tr>
+                <td>11:00 PM</td>
+                <td>????</td>
+            </tr>
+            <tr>
+                <td>12:00 AM</td>
+                <td>Midnight Surprise</td>
+            </tr>
+            <tr>
+                <td>1:00 AM</td>
+                <td>????</td>
+            </tr>
+            <tr>
+                <td>6:00 AM</td>
+                <td>Breakfast</td>
+            </tr>
+            <tr>
+                <td>12:00 PM</td>
+                <td>Submissions Due + Lunch</td>
+            </tr>
+            <tr>
+                <td>2:00 PM</td>
+                <td>Peer Voting</td>
+            </tr>
+            <tr>
+                <td>2:30 PM</td>
+                <td>Awards</td>
+            </tr>
+            <tr>
+                <td>3:00 PM</td>
+                <td>Go Home</td>
+            </tr>
+        </table>
+    </section> -->
 
     <section class="sides relative h-auto w-screen bg-blue py-10">
         <div class="flex flex-col items-center p-4 rounded-2xl w-full gap-x-10 gap-y-2 h-full bg-white justify-center">
